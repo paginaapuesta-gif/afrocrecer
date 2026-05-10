@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Aprobación | Afrocrecer Digital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-portal-v2 admin-users-page">
+  <div class="home-topbar">
+    <div class="home-topbar__inner">
+      <span>Panel administrativo · Gestión de usuarios</span>
+      <span>Afrocrecer Digital</span>
+    </div>
+  </div>
+
+  <header class="home-header">
+    <div class="home-header__inner">
+      <a href="index.html" class="home-brand" aria-label="Volver al inicio">
+        <img src="images/logo-afrocrece.png" alt="Logo Afrocrece" class="home-brand__logo">
+        <span>Afrocrecer Digital</span>
+      </a>
+
+      <nav class="home-nav" aria-label="Navegación de administración">
+        <a href="index.html">Archivo cultural</a>
+        <a href="perfil.html">Mi perfil</a>
+        <a href="admin-users.html" aria-current="page">Aprobaciones</a>
+        <button id="logoutBtn" class="btn-logout home-nav__logout">Cerrar sesión</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="admin-users-main">
+    <section class="admin-users-panel">
+      <div class="admin-users-header">
+        <div>
+          <p class="home-chip">Administración</p>
+          <h1>Solicitudes pendientes</h1>
+          <p>Aprueba o rechaza cuentas nuevas sin recargar la página.</p>
+        </div>
+        <div class="admin-users-counter" id="pendingCounter">0 pendientes</div>
+      </div>
+
+      <div id="adminUsersStatus" class="admin-users-status" aria-live="polite"></div>
+
+      <div class="admin-users-table-wrap">
+        <table class="admin-users-table" aria-label="Usuarios pendientes">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Correo</th>
+              <th>Fecha de creación</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="pendingUsersBody">
+            <tr>
+              <td colspan="5" class="admin-users-empty">Cargando usuarios pendientes...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/admin-users.js"></script>
+  <script src="js/cms-editor.js"></script>
+</body>
+</html>

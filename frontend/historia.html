@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Historia de la comunidad Afrocrecer en Veracruz, Cumaral (Meta)">
+  <title>Historia | Afrocrecer Digital</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Ajustes premium locales y encapsulados SOLO para historia.html */
+    body.info-page--historia-pro .historia-main-pro {
+      background:
+        radial-gradient(circle at 12% 8%, rgba(229, 193, 117, 0.1), transparent 38%),
+        radial-gradient(circle at 88% 20%, rgba(185, 127, 68, 0.1), transparent 44%),
+        linear-gradient(180deg, #15100c 0%, #1a130e 48%, #130f0b 100%);
+      color: #f3e8d1;
+    }
+
+    body.info-page--historia-pro .historia-hero-pro {
+      border: 1px solid rgba(229, 193, 117, 0.2);
+      background: linear-gradient(132deg, rgba(255, 220, 158, 0.06), rgba(0, 0, 0, 0.25));
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+      border-radius: 1.1rem;
+      overflow: hidden;
+    }
+
+    body.info-page--historia-pro .historia-chip {
+      background: rgba(238, 200, 129, 0.14);
+      border: 1px solid rgba(238, 200, 129, 0.34);
+      color: #ffe3ae;
+      letter-spacing: .04em;
+    }
+
+    body.info-page--historia-pro .hero-title {
+      color: #fff5de;
+      text-shadow: 0 4px 14px rgba(0, 0, 0, 0.34);
+    }
+
+    body.info-page--historia-pro .historia-hero-copy p,
+    body.info-page--historia-pro .historia-editorial p,
+    body.info-page--historia-pro .historia-editorial li,
+    body.info-page--historia-pro .historia-videos-head p,
+    body.info-page--historia-pro .historia-video-card p,
+    body.info-page--historia-pro .portal-link-card--compact p {
+      color: #eadcc4;
+    }
+
+    body.info-page--historia-pro .historia-impacto-franja,
+    body.info-page--historia-pro .historia-editorial,
+    body.info-page--historia-pro .historia-videos-wrap,
+    body.info-page--historia-pro .portal-link-card--compact {
+      border: 1px solid rgba(229, 193, 117, 0.18);
+      background: linear-gradient(155deg, rgba(255, 221, 172, 0.06), rgba(12, 8, 6, 0.42));
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+    }
+
+    body.info-page--historia-pro .historia-impacto-franja strong,
+    body.info-page--historia-pro .historia-editorial h2,
+    body.info-page--historia-pro .historia-editorial h3,
+    body.info-page--historia-pro .historia-videos-head h2,
+    body.info-page--historia-pro .historia-video-card h3,
+    body.info-page--historia-pro .portal-link-card--compact h3 {
+      color: #ffe6b5;
+    }
+
+    body.info-page--historia-pro .historia-editorial blockquote {
+      border-left: 3px solid rgba(239, 196, 116, 0.72);
+      background: rgba(239, 196, 116, 0.09);
+      color: #fff0d0;
+      border-radius: 0.3rem;
+      padding: .8rem 1rem;
+    }
+
+    body.info-page--historia-pro .historia-memoria-carousel .home-banner__item img {
+      filter: saturate(1.05) contrast(1.06);
+    }
+
+    body.info-page--historia-pro .historia-memoria-carousel .home-banner__caption {
+      background: linear-gradient(to top, rgba(10, 7, 5, 0.78), rgba(10, 7, 5, 0.22));
+    }
+
+    body.info-page--historia-pro .historia-video-card video {
+      border: 1px solid rgba(232, 194, 123, 0.34);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 0.75rem;
+    }
+
+    body.info-page--historia-pro .historia-cta-final .btn-primary {
+      background: linear-gradient(120deg, #f1c97d, #b6772f);
+      border: none;
+      color: #1f1408;
+      font-weight: 700;
+      box-shadow: 0 8px 18px rgba(182, 119, 47, 0.32);
+    }
+
+    /* Ajustes de estabilidad en media pantalla */
+    @media (max-width: 1100px) {
+      body.info-page--historia-pro .home-header__inner {
+        gap: .65rem;
+      }
+      body.info-page--historia-pro .home-header__actions-zone {
+        margin-left: auto;
+      }
+      body.info-page--historia-pro .home-nav__cta {
+        padding: .55rem .85rem;
+        border-radius: .75rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body.info-page--historia-pro .historia-main-pro {
+        background:
+          radial-gradient(circle at 12% 8%, rgba(229, 193, 117, 0.12), transparent 40%),
+          linear-gradient(180deg, #17110c 0%, #1b130c 48%, #130f0b 100%);
+      }
+      body.info-page--historia-pro .historia-hero-pro {
+        border-radius: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="home-portal home-portal-v2 info-page info-page--historia-pro">
+
+  <div class="home-topbar">
+    <div class="home-topbar__inner">
+      <span>Comunidad Afrocrece · Identidad, cultura y transformación</span>
+      <span>Veracruz, Cumaral (Meta)</span>
+    </div>
+  </div>
+
+  <header class="home-header">
+    <div class="home-header__inner">
+      <a href="home.html" class="home-brand">
+        <img src="images/logo-afrocrece.png" class="home-brand__logo" alt="Logo Afrocrece">
+        <span>Afrocrece Digital</span>
+      </a>
+
+      <button class="home-menu-btn" id="homeMenuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+      <div class="home-header__menu-zone">
+        <nav class="home-nav" id="homeNav" aria-label="Navegación principal">
+          <a href="home.html">Inicio</a>
+          <a href="home.html#comunidad">Comunidad</a>
+          <a href="archivo.html">Archivo cultural</a>
+          <a href="historia.html" aria-current="page">Historia</a>
+          <a href="atacaf.html">ATACAF</a>
+        </nav>
+      </div>
+      <div class="home-header__actions-zone">
+        <a href="login.html" class="home-nav__cta">Entrar</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="info-main historia-main-pro">
+    <section class="historia-hero-pro fade-in cinematic-hero" aria-label="Memoria viva de Afrocrece">
+      <article class="historia-hero-copy reveal-item" data-reveal="hero">
+        <p class="home-chip historia-chip">Memoria viva Afrocrece</p>
+        <h1 class="hero-title">Raíz, memoria y territorio</h1>
+        <p class="historia-entradilla hero-subtitle">Un recorrido institucional sobre la historia cultural de Afrocrece y su compromiso con la memoria afrodescendiente.</p>
+        <p>Somos una comunidad afrodescendiente que fortalece identidad, cultura y participación desde Veracruz, Cumaral. Afrocrece nace del territorio y transforma memoria viva en procesos reales para niñas, niños, jóvenes y familias.</p>
+      </article>
+      <figure class="historia-hero-visual reveal-item" data-reveal="hero">
+        <img src="images/44.jpg" alt="Comunidad Afrocrece en encuentro cultural">
+      </figure>
+    </section>
+
+    <section class="historia-impacto-franja fade-in" aria-label="Impacto cultural">
+      <article><strong data-history-count="300">+0</strong><span>personas impactadas</span></article>
+      <article><strong data-history-count="40">+0</strong><span>actividades culturales</span></article>
+      <article><strong data-history-count="12">+0</strong><span>años de proceso comunitario</span></article>
+    </section>
+
+    <section class="historia-editorial fade-in" aria-label="Quiénes somos">
+      <p class="historia-kicker">Quiénes somos</p>
+      <h2>Historia comunitaria con vocación cultural e institucional</h2>
+      <p class="historia-entradilla">Afrocrece nace en Veracruz, Cumaral, como una respuesta comunitaria para preservar memoria, fortalecer identidad y abrir rutas de participación cultural con enfoque territorial.</p>
+      <h3>Origen y memoria viva</h3>
+      <p>La oralidad, la danza y los saberes ancestrales son parte de un archivo vivo que se transmite entre generaciones. Desde allí, la comunidad construye procesos educativos y culturales que dignifican la identidad afrodescendiente.</p>
+      <h3>Participación y territorio</h3>
+      <p>Niñas, niños, jóvenes y familias participan en encuentros que integran arte, formación y liderazgo local, consolidando un tejido social que reconoce su historia y la transforma en acción colectiva.</p>
+      <ul>
+        <li>Fortalecimiento de identidad territorial.</li>
+        <li>Procesos artísticos con sentido comunitario.</li>
+        <li>Memoria cultural organizada para consulta pública.</li>
+      </ul>
+      <blockquote>“La memoria no es pasado inmóvil: es una práctica cotidiana de comunidad, dignidad y futuro.”</blockquote>
+    </section>
+
+    
+    <section class="historia-memoria-visual fade-in" aria-label="Memoria visual Afrocrece">
+      <div class="home-banner historia-memoria-carousel" id="historiaMemoriaCarousel" data-autoplay="3500" aria-label="Carrusel de memoria visual">
+        <article class="home-banner__item is-active">
+          <img src="images/45.jpg" alt="Encuentro comunitario y memoria viva" data-carousel-image="true" tabindex="0" role="button" aria-label="Ampliar imagen: Encuentro comunitario y memoria viva">
+          <div class="home-banner__caption"><h3>Encuentro comunitario</h3><p>Memoria compartida y participación territorial.</p></div>
+        </article>
+        <article class="home-banner__item">
+          <img src="images/9.jpg" alt="Danza tradicional afrodescendiente" data-carousel-image="true" tabindex="0" role="button" aria-label="Ampliar imagen: Danza tradicional afrodescendiente">
+          <div class="home-banner__caption"><h3>Danza y tradición</h3><p>Expresión cultural que transmite identidad.</p></div>
+        </article>
+        <article class="home-banner__item">
+          <img src="images/a12.jpg" alt="Juventud participante en proceso cultural" data-carousel-image="true" tabindex="0" role="button" aria-label="Ampliar imagen: Juventud participante en proceso cultural">
+          <div class="home-banner__caption"><h3>Juventud y futuro</h3><p>Nuevas generaciones fortaleciendo memoria viva.</p></div>
+        </article>
+        <button class="home-banner__control home-banner__control--prev" type="button" aria-label="Imagen anterior">‹</button>
+        <button class="home-banner__control home-banner__control--next" type="button" aria-label="Imagen siguiente">›</button>
+        <div class="home-banner__dots" aria-label="Paginación carrusel"></div>
+      </div>
+    </section>
+
+    <section class="historia-videos-wrap fade-in" aria-label="Videos de memoria cultural">
+      <header class="historia-videos-head">
+        <h2>Memoria audiovisual</h2>
+        <p>Tres registros culturales de Afrocrece para consulta y reproducción directa.</p>
+      </header>
+      <div class="historia-videos">
+      <article class="historia-video-card reveal-item is-visible" data-reveal-stagger>
+        <h3>Memoria comunitaria</h3>
+        <video controls preload="metadata" playsinline src="video/afro1.mp4"></video>
+        <p>Registro de encuentro comunitario que evidencia participación, tradición oral y fortalecimiento de identidad.</p>
+      </article>
+      <article class="historia-video-card reveal-item is-visible" data-reveal-stagger>
+        <h3>Territorio y juventud</h3>
+        <video controls preload="metadata" playsinline src="video/afro1.mp4"></video>
+        <p>Memoria audiovisual de procesos culturales donde juventud y familias articulan territorio y pertenencia.</p>
+      </article>
+      <article class="historia-video-card reveal-item is-visible" data-reveal-stagger>
+        <h3>Danza como archivo vivo</h3>
+        <video controls preload="metadata" playsinline src="video/afro1.mp4"></video>
+        <p>Documento visual sobre danza y memoria viva como herramientas de organización comunitaria.</p>
+      </article>
+      </div>
+    </section>
+
+    <section class="portal-link-card portal-link-card--compact historia-cta-final fade-in" aria-label="Explorar archivo cultural">
+      <div class="portal-link-card__content">
+        <h3>Explora el archivo cultural Afrocrece</h3>
+        <p>Consulta el archivo cultural Afrocrece y descubre registros, relatos, videos y memorias construidas desde la comunidad.</p>
+      </div>
+      <div class="cta-buttons"><a href="archivo.html" class="btn-primary">Ver archivo cultural</a></div>
+    </section>
+  </main>
+
+  <footer class="home-footer">
+    <div class="home-footer__bottom">
+      <p>Afrocrecer Digital · Historia</p>
+      <p><a href="home.html">Volver</a> · © 2026</p>
+    </div>
+  </footer>
+
+  <div id="imageModal" class="image-modal" aria-hidden="true">
+    <div class="image-modal__backdrop" data-close-image="true"></div>
+    <div class="image-modal__dialog" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+      <button class="image-modal__close" type="button" data-close-image="true" aria-label="Cerrar imagen">✕</button>
+      <img id="modalImg" alt="Imagen ampliada de memoria visual">
+      <p id="modalCaption"></p>
+    </div>
+  </div>
+
+
+  <script src="js/config.js"></script>
+  <script src="js/home.js"></script>
+  <script>
+    const videos = [
+      "https://drive.google.com/file/d/1Yrz0TPZTe4Y8D0qB_nNeuMD1CgAR3maK/view",
+      "https://drive.google.com/file/d/14ccpGBGc20WTd9JhSbZ9PpD-brMuzG1l/view?usp=sharing",
+      "https://drive.google.com/file/d/1aMdKgaehiAPy5EKNSDw58b7pu6c0y85Z/view?usp=sharing"
+    ];
+
+    function toGoogleDrivePreview(url) {
+      const raw = String(url || "").trim();
+      if (!raw) return "";
+      if (raw.includes("drive.google.com") && raw.includes("/preview")) return raw;
+      const idMatch = raw.match(/\/file\/d\/([^/]+)/);
+      if (idMatch && idMatch[1]) return `https://drive.google.com/file/d/${idMatch[1]}/preview`;
+      return raw;
+    }
+
+    function getGoogleDriveOpenUrl(url) {
+      const raw = String(url || "").trim();
+      const idMatch = raw.match(/\/file\/d\/([^/?]+)/);
+      if (idMatch && idMatch[1]) return `https://drive.google.com/file/d/${idMatch[1]}/view`;
+      return raw;
+    }
+
+    const historyCounters = document.querySelectorAll("[data-history-count]");
+    if(historyCounters.length){
+      const historyCounterObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if(!entry.isIntersecting) return;
+          const el = entry.target;
+          const target = Number(el.dataset.historyCount || 0);
+          let current = 0;
+          const step = Math.max(1, Math.ceil(target / 35));
+          const timer = setInterval(() => {
+            current = Math.min(target, current + step);
+            el.textContent = `+${current}`;
+            if(current >= target) clearInterval(timer);
+          }, 28);
+          historyCounterObserver.unobserve(el);
+        });
+      }, { threshold: 0.35 });
+      historyCounters.forEach((el) => historyCounterObserver.observe(el));
+    }
+
+    const imageModal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const modalCaption = document.getElementById("modalCaption");
+    function openImageFromSource(img){
+      modalImg.src = img.src;
+      modalCaption.textContent = img.alt || "Memoria visual Afrocrece";
+      imageModal.classList.add("is-open");
+      imageModal.setAttribute("aria-hidden","false");
+      document.body.classList.add("modal-open");
+    }
+    function closeImage(){
+      imageModal.classList.remove("is-open");
+      imageModal.setAttribute("aria-hidden","true");
+      modalImg.src = "";
+      document.body.classList.remove("modal-open");
+    }
+
+    document.querySelectorAll("[data-carousel-image='true']").forEach((img) => {
+      img.addEventListener("click", () => openImageFromSource(img));
+      img.addEventListener("keydown", (e) => { if(e.key === "Enter" || e.key === " ") { e.preventDefault(); openImageFromSource(img);} });
+    });
+    if(imageModal){
+      imageModal.addEventListener("click", (e) => {
+        if(e.target.closest("[data-close-image='true']")) closeImage();
+      });
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if(e.key !== "Escape") return;
+      if(imageModal.classList.contains("is-open")) closeImage();
+    });
+
+  </script>
+  <script src="js/cms-editor.js"></script>
+</body>
+</html>

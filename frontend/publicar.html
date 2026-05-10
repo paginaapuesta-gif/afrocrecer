@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Publicar proyecto</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-login">
+
+<header class="header">
+
+<div class="logo">
+Afrocrece Digital
+</div>
+
+<nav class="nav">
+
+<a href="index.html">Inicio</a>
+<a href="historia.html">Historia</a>
+<a href="atacaf.html">ATACAF</a>
+<a href="#">Proyectos</a>
+<a href="#">Eventos</a>
+<a href="login.html">Login</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="publicar-section">
+
+<div class="publicar-card">
+
+<h2>Publicar nuevo proyecto</h2>
+
+<form id="projectForm" enctype="multipart/form-data">
+
+<input
+type="text"
+id="title"
+placeholder="Título del proyecto"
+required
+>
+
+<textarea
+id="description"
+placeholder="Descripción del proyecto"
+required
+></textarea>
+
+<input
+type="text"
+id="category"
+placeholder="Categoría"
+required
+>
+
+<input
+  type="file"
+  id="image"
+  accept="image/*,video/*,.pdf,.doc,.docx,.xls,.xlsx"
+>
+
+<!-- PREVIEW DE IMAGEN -->
+
+<img
+id="preview"
+style="
+display:none;
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+"
+/>
+
+<label class="derechos-check">
+  <input type="checkbox" id="aceptaDerechosPublicacion" required>
+  <span>Acepto los derechos de uso de la imagen o video que estoy publicando</span>
+</label>
+
+<button type="submit">
+Publicar proyecto
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+
+<!-- JS PUBLICAR -->
+
+<script src="js/config.js"></script>
+<script src="js/publicar.js"></script>
+
+
+
+<!-- PREVIEW DE IMAGEN -->
+
+<script>
+
+const imageInput = document.getElementById("image");
+const preview = document.getElementById("preview");
+
+imageInput.addEventListener("change", function(){
+
+  const file = this.files[0];
+
+  if(file){
+
+    const url = URL.createObjectURL(file);
+
+    if(file.type.startsWith("image/")){
+      preview.src = url;
+      preview.style.display = "block";
+    } else {
+      preview.style.display = "none";
+    }
+
+  }
+
+});
+
+</script>
+
+  <script src="js/cms-editor.js"></script>
+</body>
+</html>

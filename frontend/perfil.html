@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Perfil | Afrocrece Digital</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="perfil-page">
+
+<!-- HEADER -->
+
+<header class="header">
+
+<div class="logo">
+Afrocrece Digital
+</div>
+
+<nav class="nav">
+
+<a href="index.html">Inicio</a>
+
+</nav>
+
+</header>
+
+
+<!-- BANNER -->
+
+<div class="perfil-banner"></div>
+
+
+
+<!-- PERFIL -->
+
+<section class="perfil-container">
+
+<div class="perfil-card">
+
+<div class="perfil-avatar" id="perfilAvatar">
+C
+</div>
+
+<h2 id="perfilNombre">Usuario</h2>
+
+<p id="perfilEmail"></p>
+
+<p class="perfil-bio">
+Promotor cultural afro • Eventos • Gastronomía
+</p>
+
+<div class="perfil-meta-info">
+<p id="perfilMiembroDesde">Miembro desde: —</p>
+<p id="perfilUltimaActividad">Última actividad: —</p>
+</div>
+
+<div class="perfil-badges" id="perfilBadges">
+<span class="perfil-badge">Comunidad activa</span>
+</div>
+
+<div class="perfil-impacto" id="perfilImpactoSemanal">
+<p class="perfil-impacto-title">Impacto semanal</p>
+<p>Interacciones: —</p>
+<p>Categoría destacada: —</p>
+</div>
+
+
+<!-- ESTADISTICAS -->
+
+<div class="perfil-stats">
+
+<div class="stat-item">
+<span id="totalPosts">0</span>
+<p>Registros culturales</p>
+</div>
+
+<div class="stat-item">
+<span id="totalLikes">0</span>
+<p>Apoyos</p>
+</div>
+
+<div class="stat-item">
+<span id="totalComentarios">0</span>
+<p>Comentarios</p>
+</div>
+
+</div>
+
+
+<div class="perfil-botones">
+
+<button onclick="window.location.href='index.html'" class="btn-volver">
+Volver al archivo
+</button>
+
+<button onclick="window.location.href='publicar.html'" class="btn-volver btn-perfil-publicar">
+Crear registro
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- REGISTROS CULTURALES -->
+
+<section class="perfil-publicaciones">
+
+<div class="perfil-publicaciones-head">
+<h3>Mis registros culturales</h3>
+
+<div class="perfil-controles">
+<select id="perfilFiltroTipo" aria-label="Filtrar por tipo">
+<option value="todos">Todos</option>
+<option value="event">Eventos</option>
+<option value="service">Servicios</option>
+<option value="product">Productos</option>
+<option value="food">Comida</option>
+<option value="project">Cultura</option>
+</select>
+
+<select id="perfilOrden" aria-label="Ordenar registros culturales">
+<option value="recientes">Más recientes</option>
+<option value="likes">Más likes</option>
+<option value="comentarios">Más comentadas</option>
+</select>
+</div>
+</div>
+
+<div id="misPublicaciones" class="perfil-posts">
+<div class="perfil-loading-state">Cargando publicaciones...</div>
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+Afrocrece Digital • Plataforma cultural afro
+
+</footer>
+
+
+
+<script src="js/config.js"></script>
+<script src="js/perfil.js"></script>
+
+  <script src="js/cms-editor.js"></script>
+</body>
+
+</html>

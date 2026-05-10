@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal institucional de Afrocrecer Digital para preservar la memoria cultural afrollanera de la vereda Veracruz.">
+  <title>Inicio | Afrocrecer Digital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="home-portal home-portal-v2 home-portal-v3">
+
+  <header class="home-header">
+    <div class="home-header__inner">
+      <div class="home-header__brand-zone">
+        <a href="home.html" class="home-brand" aria-label="Inicio Afrocrecer Digital">
+          <img src="images/logo-afrocrece.png" alt="Logo Afrocrece" class="home-brand__logo">
+          <span>Afrocrecer Digital</span>
+        </a>
+      </div>
+
+      <button class="home-menu-btn" id="homeMenuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+      <div class="home-header__menu-zone">
+        <nav class="home-nav" id="homeNav" aria-label="Navegación principal">
+          <a href="home.html" aria-current="page">Inicio</a>
+          <a href="home.html#comunidad">Comunidad</a>
+          <a href="archivo.html">Archivo cultural</a>
+          <a href="historia.html">Historia</a>
+          <a href="atacaf.html">ATACAF</a>
+        </nav>
+      </div>
+
+      <div class="home-header__actions-zone">
+        <a href="login.html" class="home-nav__cta" id="homeSessionLink">Entrar</a>
+        <button id="homeLogoutBtn" class="btn-logout home-nav__logout" type="button" style="display:none;">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="home-main-v3">
+
+    <section class="home-cinematic" id="inicio" aria-label="Presentación principal Afrocrece">
+      <video class="home-cinematic__bg" autoplay muted loop playsinline poster="images/afro-bg.jpg">
+        <source src="video/afro1.mp4" type="video/mp4">
+      </video>
+
+      <div class="home-cinematic__content">
+        <p class="home-chip">Memoria afrollanera en red</p>
+
+        <h1>
+          Afrocrecer
+          <span>Digital</span>
+        </h1>
+
+        <p>
+          Plataforma cultural comunitaria para preservar, organizar y difundir
+          la memoria viva de Veracruz, Cumaral con una narrativa visual
+          contemporánea y territorial.
+        </p>
+
+        <div class="home-hero__actions">
+          <a href="archivo.html" class="home-btn home-btn--primary">Explorar archivo</a>
+          <a href="#comunidad" class="home-btn home-btn--ghost">Conocer comunidad</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section home-impact" id="comunidad" aria-label="Bloque de impacto cultural">
+      <div class="home-section__head">
+        <h2>Impacto comunitario</h2>
+        <p>Una narrativa digital que integra cultura, archivo y participación territorial.</p>
+      </div>
+
+      <div class="home-impact__grid">
+        <article class="home-impact__card">
+          <div class="home-impact__icon">▤</div>
+          <h3>Archivo cultural</h3>
+          <p>Danza, música, oralidad y prácticas ancestrales en un espacio de reconocimiento cultural.</p>
+        </article>
+
+        <article class="home-impact__card">
+          <div class="home-impact__icon">✦</div>
+          <h3>Comunidad</h3>
+          <p>Registro organizado de contenidos audiovisuales y memoria comunitaria para consulta permanente.</p>
+        </article>
+
+        <article class="home-impact__card">
+          <div class="home-impact__icon">◈</div>
+          <h3>Memoria viva</h3>
+          <p>Participación de liderazgos, juventudes y aliados en procesos de preservación e innovación social.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-section home-visual-grid" id="archivo-cultural" aria-label="Galería compacta de comunidad">
+      <div class="home-section__head">
+        <h2>Galería compacta</h2>
+        <p>Tres miradas del territorio afrometense en formato equilibrado.</p>
+      </div>
+
+      <div class="home-mosaic home-mosaic--compact">
+        <article class="home-mosaic__item home-mosaic__item--clickable">
+          <img src="images/32.jpg" alt="Presentación cultural afrometense" data-lightbox-image style="object-position:center 22%;">
+          <span>Danza tradicional</span>
+        </article>
+
+        <article class="home-mosaic__item home-mosaic__item--clickable">
+          <img src="images/26.jpg" alt="Encuentro comunitario en Veracruz" data-lightbox-image style="object-position:center 30%;">
+          <span>Encuentro comunitario</span>
+        </article>
+
+        <article class="home-mosaic__item home-mosaic__item--clickable">
+          <img src="images/40.jpg" alt="Jóvenes en proceso cultural" data-lightbox-image style="object-position:center 18%;">
+          <span>Juventud y memoria</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-section home-media-carousel" id="galeria" aria-label="Carrusel audiovisual principal">
+      <div class="home-section__head">
+        <h2>Carrusel audiovisual</h2>
+        <p>Relatos visuales y memoria viva con reproducción automática.</p>
+      </div>
+
+      <div class="home-banner home-banner--main" id="homeMediaBanner" data-autoplay="3000" aria-label="Carrusel multimedia de comunidad">
+        <article class="home-banner__item is-active" data-title="Ritmo y tradición" data-description="Danzas y expresiones que mantienen viva la herencia afro en el Meta.">
+          <img src="images/a2.jpeg" alt="Celebración cultural afrometense en Veracruz">
+          <div class="home-banner__caption home-banner__caption--left">
+            <h3>Ritmo y tradición</h3>
+            <p>Danzas y expresiones que mantienen viva la herencia afro en el Meta.</p>
+          </div>
+        </article>
+
+        <article class="home-banner__item" data-title="Encuentro comunitario" data-description="Espacios de unión, aprendizaje y fortalecimiento del territorio.">
+          <img src="images/fondo-afro.jpg" alt="Comunidad reunida en encuentro cultural">
+          <div class="home-banner__caption home-banner__caption--left">
+            <h3>Encuentro comunitario</h3>
+            <p>Espacios de unión, aprendizaje y fortalecimiento del territorio.</p>
+          </div>
+        </article>
+
+        <article class="home-banner__item" data-title="Memoria compartida" data-description="Imágenes que conectan territorio, cultura y comunidad.">
+          <img src="images/222222.jpeg" alt="Comunidad reunida en encuentro cultural">
+          <div class="home-banner__caption home-banner__caption--left">
+            <h3>Memoria compartida</h3>
+            <p>Imágenes que conectan territorio, cultura y comunidad.</p>
+          </div>
+        </article>
+
+        <button class="home-banner__control home-banner__control--prev" type="button" aria-label="Slide anterior">‹</button>
+        <button class="home-banner__control home-banner__control--next" type="button" aria-label="Siguiente slide">›</button>
+        <div class="home-banner__dots" aria-label="Controles del carrusel"></div>
+      </div>
+    </section>
+
+    <section class="home-section home-events-strip" id="eventos" aria-label="Eventos de la comunidad">
+      <div class="home-section__head">
+        <h2>Agenda afrocomunitaria</h2>
+        <p>Encuentros próximos para fortalecer identidad y tejido comunitario.</p>
+      </div>
+
+      <div class="home-events-strip__grid home-events-strip__grid--compact">
+        <article><strong>12 Abr</strong><span>Festival de danza afrometense</span></article>
+        <article><strong>18 Abr</strong><span>Cocina ancestral comunitaria</span></article>
+        <article><strong>25 Abr</strong><span>Mercado local y trueque cultural</span></article>
+        <article><strong>30 Abr</strong><span>Noche cultural afrojuvenil</span></article>
+        <article><strong>04 May</strong><span>Círculo de memoria oral</span></article>
+        <article><strong>10 May</strong><span>Taller de tambor afrometense</span></article>
+      </div>
+    </section>
+
+    <section class="home-section home-map-layout home-map-layout--balanced" id="mapa">
+      <div class="home-map-wrap">
+        <iframe title="Mapa de Veracruz Cumaral" src="https://maps.google.com/maps?q=4.2345936,-73.2206437&t=k&z=16&output=embed" loading="lazy"></iframe>
+      </div>
+
+      <aside class="home-map-info home-map-info--rich">
+        <h3>Dónde nace Afrocrece</h3>
+        <p><strong>Ubicación:</strong> Veracruz, Cumaral, Meta, Colombia.</p>
+        <p><strong>Propósito territorial:</strong> preservar memoria afrodescendiente, conectar saberes y visibilizar procesos comunitarios.</p>
+        <p>Este punto reúne prácticas culturales, encuentros y narrativas que sostienen la identidad afrollanera.</p>
+        <a class="home-map-info__cta" href="https://www.google.com/maps/@4.2345936,-73.2206437,16z" target="_blank" rel="noopener">Abrir ubicación</a>
+      </aside>
+    </section>
+
+    <section class="home-section home-testimonials" id="testimonios" aria-label="Testimonios de la comunidad">
+      <div class="home-section__head">
+        <h2>Voces de la comunidad</h2>
+        <p>Testimonios sobre memoria, identidad y participación cultural.</p>
+      </div>
+
+      <div class="home-testimonials__grid" id="testimonialGrid">
+        <article class="testimonial-card" tabindex="0" role="button" aria-label="Abrir testimonio de María R." data-name="María R." data-text="Afrocrece nos permite mostrar nuestra danza, fortalecer la identidad juvenil y mantener viva la tradición afrometense desde Veracruz." data-image="images/afro.jpg">
+          <img src="images/afro.jpg" alt="Integrante cultural de Afrocrece">
+          <p>“Afrocrece nos permite mostrar nuestra danza y mantener viva la tradición.”</p>
+          <strong>María R.</strong>
+        </article>
+
+        <article class="testimonial-card" tabindex="0" role="button" aria-label="Abrir testimonio de José A." data-name="José A." data-text="Aquí compartimos emprendimientos y avisos que sí llegan a la comunidad. Es una herramienta real para conectarnos y participar." data-image="images/fondo-afro.jpg">
+          <img src="images/fondo-afro.jpg" alt="Joven participante de la comunidad">
+          <p>“Aquí compartimos emprendimientos y avisos que sí llegan a la comunidad.”</p>
+          <strong>José A.</strong>
+        </article>
+
+        <article class="testimonial-card" tabindex="0" role="button" aria-label="Abrir testimonio de Luz M." data-name="Luz M." data-text="El archivo audiovisual nos ayuda a preservar nuestra memoria afrometense y a enseñar a nuevas generaciones el valor de nuestra cultura." data-image="images/afro-bg.jpg">
+          <img src="images/afro-bg.jpg" alt="Lideresa cultural de Veracruz">
+          <p>“El archivo audiovisual nos ayuda a preservar nuestra memoria afrometense.”</p>
+          <strong>Luz M.</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-section home-allies" id="aliados-comunitarios" aria-label="Aliados de la comunidad">
+      <div class="home-section__head">
+        <h2>Aliados comunitarios</h2>
+        <p>Instituciones que fortalecen la plataforma cultural Afrocrecer Digital.</p>
+      </div>
+
+      <div class="home-allies__grid home-allies__grid--links">
+        <a class="home-ally-card" href="aliado-afrocrece.html">
+          <div class="home-ally-card__visual">
+            <span class="home-ally-card__badge">Comunitario</span>
+            <img src="images/logo-afrocrece.png" alt="Logo Afrocrecer Digital">
+          </div>
+          <span class="home-ally-card__title">Afrocrecer Digital</span>
+          <small>Memoria cultural en red para preservar identidad territorial.</small>
+          <em>Conocer aliado →</em>
+        </a>
+
+        <a class="home-ally-card" href="aliado-atacaf.html">
+          <div class="home-ally-card__visual">
+            <span class="home-ally-card__badge">Asociativo</span>
+            <img src="images/14.jpg" alt="Logo Asociación ATACAF">
+          </div>
+          <span class="home-ally-card__title">Asociación ATACAF</span>
+          <small>Liderazgo, participación y tejido comunitario afrodescendiente.</small>
+          <em>Ver historia →</em>
+        </a>
+
+        <a class="home-ally-card" href="aliado-unad.html">
+          <div class="home-ally-card__visual">
+            <span class="home-ally-card__badge">Académico</span>
+            <img src="images/aliado1.png" alt="Logo Proyecto UNAD">
+          </div>
+          <span class="home-ally-card__title">Proyecto UNAD</span>
+          <small>Innovación social aplicada para fortalecer procesos culturales.</small>
+          <em>Explorar aporte →</em>
+        </a>
+
+        <a class="home-ally-card" href="aliado-intermatsi.html">
+          <div class="home-ally-card__visual">
+            <span class="home-ally-card__badge">Investigación</span>
+            <img src="images/aliado4.png" alt="Logo Semillero INTERMATSI">
+          </div>
+          <span class="home-ally-card__title">Semillero INTERMATSI</span>
+          <small>Conocimiento interdisciplinar orientado al territorio comunitario.</small>
+          <em>Explorar vínculo →</em>
+        </a>
+      </div>
+    </section>
+
+    <section class="home-section home-final-cta" aria-label="Llamado final a la acción">
+      <div class="home-final-cta__card">
+        <h2>La memoria cultural también se construye en digital</h2>
+        <p>Explora, participa y fortalece el archivo vivo de Veracruz junto a la comunidad Afrocrece.</p>
+
+        <div class="home-hero__actions">
+          <a href="archivo.html" class="home-btn home-btn--primary">Explorar archivo</a>
+          <a href="#comunidad" class="home-btn home-btn--ghost">Conocer comunidad</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="home-footer" id="contacto">
+    <div class="home-footer__bottom home-footer__bottom--split home-footer__bottom--compact">
+      <p class="home-footer__contacto">Contacto: afrocrecedigital@comunidad.org · +57 320 000 0000</p>
+      <p class="home-footer__legal">
+        <a href="#">Términos y condiciones</a> ·
+        <a href="#">Política de privacidad</a> ·
+        © 2026 Afrocrecer Digital
+      </p>
+    </div>
+  </footer>
+
+  <div class="testimonial-modal" id="testimonialModal" aria-hidden="true">
+    <div class="testimonial-modal__backdrop" data-close="modal"></div>
+    <article class="testimonial-modal__card" role="dialog" aria-modal="true" aria-labelledby="testimonialModalTitle">
+      <button type="button" class="testimonial-modal__close" data-close="modal" aria-label="Cerrar testimonio">✕</button>
+      <img id="testimonialModalImage" src="" alt="Testimonio comunitario ampliado">
+      <h3 id="testimonialModalTitle"></h3>
+      <p id="testimonialModalText"></p>
+    </article>
+  </div>
+
+  <div class="media-lightbox" id="mediaLightbox" aria-hidden="true">
+    <div class="media-lightbox__backdrop" data-close="lightbox"></div>
+    <article class="media-lightbox__card" role="dialog" aria-modal="true" aria-labelledby="mediaLightboxTitle">
+      <button type="button" class="media-lightbox__close" data-close="lightbox" aria-label="Cerrar galería">✕</button>
+      <img id="mediaLightboxImage" src="" alt="Imagen ampliada de la galería">
+      <h3 id="mediaLightboxTitle"></h3>
+      <p id="mediaLightboxText"></p>
+    </article>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/cms-editor.js"></script>
+</body>
+</html>

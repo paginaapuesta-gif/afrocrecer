@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editar registro cultural | Afrocrece Digital</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="editar-page">
+
+<header class="header">
+  <div class="logo">Afrocrece Digital</div>
+  <nav class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="perfil.html">Mi perfil</a>
+  </nav>
+</header>
+
+<section class="editar-wrapper">
+  <div class="editar-card">
+    <h2>Editar registro cultural</h2>
+    <p class="editar-subtitle">Actualiza la información cultural de tu registro para mantener viva la memoria comunitaria.</p>
+
+    <div id="editStatus" class="editar-status" aria-live="polite"></div>
+
+    <form id="editForm" class="editar-form">
+      <label for="title">Título</label>
+      <input type="text" id="title" placeholder="Título" required maxlength="80">
+
+      <label for="description">Descripción</label>
+      <textarea id="description" placeholder="Describe tu proyecto, servicio o evento" rows="5" required></textarea>
+
+      <div class="editar-row">
+        <div>
+          <label for="type">Categoría</label>
+          <select id="type">
+            <option value="project">Cultura</option>
+            <option value="event">Evento</option>
+            <option value="service">Servicio</option>
+            <option value="product">Producto</option>
+            <option value="food">Comida</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="territorio">Territorio</label>
+          <input type="text" id="territorio" placeholder="Veracruz, Cumaral">
+        </div>
+      </div>
+
+      <div class="editar-row">
+        <div>
+          <label for="valorCultural">Valor cultural / aporte</label>
+          <input type="text" id="valorCultural" placeholder="Aporte voluntario, intercambio o valor simbólico">
+        </div>
+
+        <div>
+          <label for="fuente">Fuente</label>
+          <input type="text" id="fuente" placeholder="Origen del registro cultural">
+        </div>
+      </div>
+
+      <div class="editar-row">
+        <div>
+          <label for="portadorTradicion">Portador(a) de tradición</label>
+          <input type="text" id="portadorTradicion" placeholder="Persona o colectivo protagonista">
+        </div>
+
+        <div>
+          <label for="fechaCultural">Fecha cultural</label>
+          <input type="date" id="fechaCultural">
+        </div>
+      </div>
+
+      <label for="contextoHistorico">Contexto histórico</label>
+      <textarea id="contextoHistorico" placeholder="Explica el contexto histórico o comunitario del registro" rows="4"></textarea>
+
+      <div class="editar-row">
+        <div>
+          <label for="image">Nuevo archivo (opcional)</label>
+          <input type="file" id="image" accept="image/*,video/*,.pdf,.doc,.docx,.xls,.xlsx">
+        </div>
+      </div>
+
+      <div class="editar-preview-wrap">
+        <p class="editar-preview-title">Archivo actual</p>
+        <img id="editImagePreview" class="editar-preview" alt="Vista previa del registro cultural">
+      </div>
+
+      <div class="editar-actions">
+        <button type="button" class="btn-cancelar-edicion" onclick="window.location.href='perfil.html'">Cancelar</button>
+        <button type="submit" id="btnGuardarEdicion" class="btn-guardar-edicion">Actualizar registro cultural</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script src="js/config.js"></script>
+<script src="js/editar.js"></script>
+
+  <script src="js/cms-editor.js"></script>
+</body>
+</html>

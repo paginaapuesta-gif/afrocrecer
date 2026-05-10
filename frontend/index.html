@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Afrocrecer Digital</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="home-page home-portal-v2">
+
+
+<!-- ================= HEADER ================= -->
+
+<div class="home-topbar">
+  <div class="home-topbar__inner">
+    <span>Comunidad Veracruz Juventud Afrocrecer · Veracruz, Cumaral (Meta)</span>
+    <span>Archivo cultural digital y participación comunitaria</span>
+  </div>
+</div>
+
+<header class="home-header">
+  <div class="home-header__inner">
+    <a href="home.html" class="home-brand" aria-label="Volver al inicio institucional">
+      <img src="images/logo-afrocrece.png" alt="Logo Afrocrecer" class="home-brand__logo">
+      <span>Afrocrecer Digital</span>
+    </a>
+
+    <button class="home-menu-btn" id="indexMenuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+    <nav class="home-nav" id="indexNav" aria-label="Navegación principal">
+      <a href="home.html">Inicio</a>
+      <a href="home.html#comunidad">Comunidad</a>
+      <a href="archivo.html" aria-current="page">Archivo cultural</a>
+      <a href="historia.html">Historia</a>
+      <a href="atacaf.html">ATACAF</a>
+
+      <div class="home-notif" id="indexNotif">
+        <button class="home-notif__btn" id="indexNotifBtn" type="button" aria-label="Ver notificaciones" aria-expanded="false">
+          🔔 <span class="home-notif__count" id="indexNotifCount">2</span>
+        </button>
+        <div class="home-notif__panel" id="indexNotifPanel" role="region" aria-label="Panel de notificaciones">
+          <p><strong>Nuevo evento</strong> publicado en la agenda comunitaria.</p>
+          <p><strong>3 registros culturales</strong> nuevos en el archivo desde ayer.</p>
+        </div>
+      </div>
+
+      <a href="login.html" id="loginLink" class="home-nav__cta">Entrar</a>
+
+      <button id="logoutBtn" class="btn-logout home-nav__logout" style="display:none;">
+        Cerrar sesión
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-overlay">
+
+<h1>Danza, Cultura y Comunidad</h1>
+
+<p>
+Una plataforma digital para visibilizar proyectos culturales afro,
+compartir historias y fortalecer la identidad comunitaria.
+</p>
+
+<a href="#crear" class="btn-publicar">Agregar al archivo cultural</a>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= LAYOUT RED SOCIAL ================= -->
+
+<section class="main-layout" id="proyectos">
+
+
+
+<!-- ================= SIDEBAR IZQUIERDA ================= -->
+
+<aside class="sidebar">
+
+<h3>Comunidad</h3>
+
+<div class="sidebar-box perfil-box">
+
+<img
+id="perfilAvatar"
+class="perfil-avatar"
+src=""
+alt="avatar usuario"
+>
+
+<div class="perfil-info">
+
+<p class="perfil-nombre" id="miPerfil">
+Usuario
+</p>
+
+<p class="perfil-rol">
+Miembro de la comunidad
+</p>
+
+</div>
+
+<button class="btn-perfil" onclick="irPerfil()">Ver perfil</button>
+
+</div>
+
+
+
+<div class="sidebar-box">
+
+<p onclick="document.getElementById('tituloProyecto').scrollIntoView({behavior:'smooth'})">
+➕ Agregar al archivo cultural
+</p>
+
+</div>
+
+
+
+<h3>Colecciones del archivo</h3>
+
+<div class="sidebar-box">
+
+<p class="filtro-btn activo" onclick="filtrarPublicaciones('todos', this)">
+📚 Todo el archivo
+</p>
+
+<p class="filtro-btn" onclick="filtrarPublicaciones('food', this)">
+🍲 Tradición y gastronomía
+</p>
+
+<p class="filtro-btn" onclick="filtrarPublicaciones('service', this)">
+🧵 Saberes y oficios
+</p>
+
+<p class="filtro-btn" onclick="filtrarPublicaciones('product', this)">
+🗂 Archivo documental
+</p>
+
+<p class="filtro-btn" onclick="filtrarPublicaciones('project', this)">
+📖 Historias, danzas y memoria
+</p>
+
+<p class="filtro-btn" onclick="filtrarPublicaciones('event', this)">
+🎉 Eventos comunitarios
+</p>
+
+</div>
+
+</aside>
+
+
+
+<!-- ================= FEED CENTRAL ================= -->
+
+<main class="feed-centro">
+
+<div class="feed-heading-academic">
+<h2 class="titulo-feed">
+📚 Archivo Cultural Comunitario Afrocrece
+</h2>
+<p class="feed-heading-academic__desc">
+Explora las historias, danzas, tradiciones y eventos que construyen la memoria cultural de nuestra comunidad afrollanera.
+</p>
+</div>
+
+<div class="feed-tools">
+<div class="feed-tools-row">
+<input id="busquedaFeed" type="text" placeholder="🔎 Buscar registro por título, memoria, autor o territorio">
+<select id="ordenFeed" aria-label="Ordenar registros del archivo cultural">
+<option value="recientes">Más recientes</option>
+<option value="antiguas">Más antiguas</option>
+<option value="likes">Más valoradas</option>
+<option value="comentarios">Más comentadas</option>
+</select>
+</div>
+<div id="feedResultadosResumen" class="feed-resultados-resumen"></div>
+<div id="filtrosActivosFeed" class="filtros-activos-feed"></div>
+</div>
+
+
+<!-- ===== FORMULARIO PUBLICAR ===== -->
+
+<!-- ===== FORMULARIO PUBLICAR ===== -->
+
+<div class="crear-post" id="crear">
+
+<div class="crear-post-header">
+
+<div class="avatar-post">
+J
+</div>
+
+<div>
+<p class="crear-titulo">Agregar al archivo cultural</p>
+<span class="crear-sub">Comparte un registro para fortalecer la memoria colectiva</span>
+</div>
+
+</div>
+
+
+<!-- FILA CATEGORIA + TITULO -->
+
+<div class="form-row">
+
+<select id="tipoProyecto">
+
+<option value="project">📖 Historia, danza o memoria</option>
+<option value="food">🍲 Tradición y gastronomía</option>
+<option value="service">🧵 Saber u oficio comunitario</option>
+<option value="product">🗂 Archivo documental</option>
+<option value="event">🎉 Evento cultural</option>
+
+</select>
+
+
+<input
+type="text"
+id="tituloProyecto"
+placeholder="Título del registro cultural"
+/>
+
+</div>
+
+
+<!-- DESCRIPCION -->
+
+<textarea
+id="descripcionProyecto"
+placeholder="Describe este registro cultural, su contexto y su valor para la memoria comunitaria..."
+></textarea>
+
+
+<!-- FILA VALOR CULTURAL + TERRITORIO -->
+
+<div class="form-row">
+
+<input
+type="text"
+id="valorCulturalProyecto"
+placeholder="🌿 Valor cultural o aporte comunitario (opcional)"
+/>
+
+
+<input
+type="text"
+id="territorioProyecto"
+placeholder="📍 Territorio (Ej: Veracruz, Cumaral)"
+/>
+
+</div>
+
+<div class="form-row">
+
+<input
+type="text"
+id="fuenteProyecto"
+placeholder="🗂 Fuente o procedencia del registro"
+/>
+
+<input
+type="text"
+id="portadorProyecto"
+placeholder="👤 Portador(a) de tradición o protagonista"
+/>
+
+</div>
+
+<div class="form-row">
+
+<input
+type="date"
+id="fechaCulturalProyecto"
+placeholder="📅 Fecha cultural"
+/>
+
+<input
+type="text"
+id="contextoCortoProyecto"
+placeholder="🏛 Contexto histórico breve"
+/>
+
+</div>
+
+<textarea
+id="contextoHistoricoProyecto"
+placeholder="Describe el contexto histórico, simbólico o comunitario de este registro cultural..."
+></textarea>
+
+
+<!-- SUBIR IMAGEN -->
+
+<label class="upload-box">
+
+<input
+type="file"
+id="imagenProyecto"
+accept="image/*,video/*,.pdf,.doc,.docx,.xls,.xlsx"
+multiple
+hidden
+>
+
+<div class="upload-content">
+📷🎥📄 Subir archivo
+<span>Imágenes, videos o documentos</span>
+</div>
+
+</label>
+
+<!-- 🔥 PREVIEW -->
+<div id="previewContainer" class="preview-container"></div>
+
+</label>
+
+<label class="derechos-check">
+<input type="checkbox" id="aceptaDerechosProyecto">
+<span>Acepto los derechos de uso del material audiovisual o documental que incorporo al archivo cultural</span>
+</label>
+
+
+<!-- BOTON PUBLICAR -->
+
+<button onclick="crearProyecto()" class="btn-publicar">
+
+Guardar registro cultural
+
+</button>
+
+</div>
+
+
+
+<!-- ===== FEED DINÁMICO ===== -->
+
+<div id="feed"></div>
+
+</main>
+
+
+
+<!-- ================= SIDEBAR DERECHA ================= -->
+
+<aside class="sidebar">
+
+<h3>Explorar el archivo</h3>
+
+<div class="sidebar-box quick-actions-box">
+
+<button id="quickActionEventos" class="quick-action-btn" onclick="filtrarPublicaciones('event', this)">
+🎉 Ver eventos comunitarios
+</button>
+
+<button class="quick-action-btn" onclick="filtrarPublicaciones('food', this)">
+🍲 Ver tradición y gastronomía
+</button>
+
+<button class="quick-action-btn" onclick="document.getElementById('crear').scrollIntoView({behavior:'smooth'})">
+✍️ Agregar al archivo
+</button>
+
+</div>
+
+
+
+<h3>Ejes de memoria</h3>
+
+<div class="sidebar-box tendencias-box">
+
+<span class="tendencia-chip">#CulturaAfro</span>
+<span class="tendencia-chip">#ComidaCosteña</span>
+<span class="tendencia-chip">#Afrocrecer</span>
+
+</div>
+
+
+
+<h3>Resumen del archivo</h3>
+<div class="sidebar-box resumen-feed-box" id="resumenFeedSidebar">
+<p>Cargando resumen...</p>
+</div>
+
+
+
+<h3>Agenda comunitaria</h3>
+<p class="usuarios-activos-sub">Últimas actividades para la vereda Veracruz</p>
+<div class="sidebar-box agenda-comunitaria-box" id="agendaComunitariaSidebar">
+<p>Sin eventos culturales registrados aún</p>
+</div>
+
+
+
+<h3>Mapa de la vereda</h3>
+<p class="usuarios-activos-sub">Ubicaciones recientes de registros y eventos culturales</p>
+<div class="sidebar-box mapa-vereda-box" id="mapaVeredaSidebar">
+<p class="agenda-empty">Cargando mapa comunitario...</p>
+</div>
+
+
+
+<h3>Necesidades y ofertas</h3>
+<p class="usuarios-activos-sub">Intercambio local: transporte, empleo y servicios</p>
+<div class="sidebar-box necesidades-ofertas-box" id="necesidadesOfertasSidebar">
+<p class="agenda-empty">Sin datos por ahora.</p>
+</div>
+
+
+
+<h3>Reconocimientos comunitarios</h3>
+<p class="usuarios-activos-sub">Usuarios más activos de la semana</p>
+<div class="sidebar-box reconocimientos-box" id="reconocimientosSidebar">
+<p class="agenda-empty">Sin actividad suficiente aún.</p>
+</div>
+
+
+
+<h3>Usuarios activos</h3>
+<p class="usuarios-activos-sub">Actividad reciente de la comunidad</p>
+<div id="usuariosActivosEstado"></div>
+
+<div class="sidebar-box usuarios-activos-box" id="usuariosActivosList">
+
+<p>Sin actividad reciente</p>
+
+</div>
+
+</aside>
+
+
+
+</section>
+
+
+
+<button id="backToTopBtn" class="back-to-top" aria-label="Volver arriba">↑</button>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+Afrocrecer Digital • Archivo cultural participativo afro
+
+</footer>
+
+
+
+<!-- ================= SCRIPTS ================= -->
+
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+
+
+
+<script>
+
+/* =========================
+   CARGAR USUARIO EN SIDEBAR
+========================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+const menuBtn = document.getElementById("indexMenuBtn");
+const nav = document.getElementById("indexNav");
+
+if(menuBtn && nav){
+menuBtn.addEventListener("click", () => {
+nav.classList.toggle("is-open");
+menuBtn.setAttribute("aria-expanded", nav.classList.contains("is-open") ? "true" : "false");
+});
+
+nav.querySelectorAll("a").forEach((link) => {
+link.addEventListener("click", () => {
+nav.classList.remove("is-open");
+menuBtn.setAttribute("aria-expanded", "false");
+});
+});
+}
+
+const notifBtn = document.getElementById("indexNotifBtn");
+const notifPanel = document.getElementById("indexNotifPanel");
+const notifCount = document.getElementById("indexNotifCount");
+
+if(notifBtn && notifPanel){
+const notifStorageKey = "notif-read-index";
+if(localStorage.getItem(notifStorageKey) === "1" && notifCount){
+notifCount.textContent = "0";
+}
+
+notifBtn.addEventListener("click", (event) => {
+event.stopPropagation();
+const open = !notifPanel.classList.contains("is-open");
+notifPanel.classList.toggle("is-open", open);
+notifBtn.setAttribute("aria-expanded", open ? "true" : "false");
+
+if(open && notifCount){
+notifCount.textContent = "0";
+localStorage.setItem(notifStorageKey, "1");
+}
+});
+
+document.addEventListener("click", (event) => {
+if(!notifPanel.contains(event.target) && !notifBtn.contains(event.target)){
+notifPanel.classList.remove("is-open");
+notifBtn.setAttribute("aria-expanded", "false");
+}
+});
+}
+
+const usuario = localStorage.getItem("usuarioEmail");
+const avatar = localStorage.getItem("usuarioAvatar");
+
+const perfil = document.getElementById("miPerfil");
+const foto = document.getElementById("perfilAvatar");
+
+if(usuario && perfil){
+perfil.innerText = usuario.split("@")[0];
+}
+
+if(avatar && foto){
+foto.src = API_BASE_URL + avatar;
+}else{
+foto.src = "images/logo-afrocrece.png";
+}
+
+});
+
+</script>
+
+
+
+  <script src="js/cms-editor.js"></script>
+</body>
+</html>

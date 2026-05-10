@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Registro | Afrocrece Digital</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-registro registro-page-pro">
+
+
+<header class="header">
+
+<div class="logo">
+Afrocrece Digital
+</div>
+
+<nav class="nav">
+
+<a href="index.html">Inicio</a>
+<a href="login.html">Login</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="auth-section">
+
+<div class="auth-card registro-card-pro registro-card-glass">
+
+<div class="registro-avatar" aria-hidden="true"><span></span></div>
+
+<h2>Crear cuenta</h2>
+
+<p class="auth-subtitulo">
+Diseño limpio, moderno y seguro
+</p>
+
+<div id="registroStatus" class="registro-status" aria-live="polite"></div>
+
+<form id="registroForm" novalidate>
+
+<div class="input-group">
+<label>Nombre</label>
+<div class="input-icon-wrap">
+  <span class="input-icon" aria-hidden="true">👤</span>
+  <input 
+  type="text"
+  id="nombre"
+  placeholder="Tu nombre"
+  autocomplete="name"
+  required
+  >
+</div>
+</div>
+
+<div class="input-group">
+<label>Correo electrónico</label>
+<div class="input-icon-wrap">
+  <span class="input-icon" aria-hidden="true">✉️</span>
+  <input 
+  type="email"
+  id="email"
+  placeholder="correo@email.com"
+  autocomplete="email"
+  required
+  >
+</div>
+</div>
+
+<div class="input-group">
+
+<label>Contraseña</label>
+<div class="registro-password-wrap input-icon-wrap">
+  <span class="input-icon" aria-hidden="true">🔒</span>
+  <input 
+  type="password"
+  id="password"
+  placeholder="••••••••"
+  autocomplete="new-password"
+  required
+  minlength="8"
+  >
+  <button type="button" id="toggleRegistroPassword" class="toggle-password-btn" aria-label="Mostrar contraseña">👁️</button>
+</div>
+
+</div>
+
+<p class="registro-help">Usa mínimo 8 caracteres para mayor seguridad.</p>
+
+<button type="submit" class="btn-auth">
+Crear cuenta
+</button>
+
+</form>
+
+<p class="auth-link">
+¿Ya tienes cuenta?
+<a href="login.html">Iniciar sesión</a>
+</p>
+
+
+
+</div>
+
+</section>
+
+
+<footer class="footer">
+
+Afrocrece Digital • Plataforma cultural afro
+
+</footer>
+
+<script src="js/config.js"></script>
+
+<script src="js/registro.js"></script>
+
+
+
+
+  <script src="js/cms-editor.js"></script>
+</body>
+</html>

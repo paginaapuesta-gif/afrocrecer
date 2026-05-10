@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Archivo cultural comunitario Afrocrece Digital.">
+  <title>Archivo cultural | Afrocrece Digital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-portal home-portal-v2 archivo-page-pro">
+  <div class="home-topbar">
+    <div class="home-topbar__inner">
+      <span>Comunidad Afrocrece · Archivo cultural abierto</span>
+      <span>Veracruz, Cumaral (Meta)</span>
+    </div>
+  </div>
+
+  <header class="home-header">
+    <div class="home-header__inner">
+      <div class="home-header__brand-zone">
+        <a href="home.html" class="home-brand" aria-label="Inicio Afrocrece Digital">
+          <img src="images/logo-afrocrece.png" alt="Logo Afrocrece" class="home-brand__logo">
+          <span>Afrocrecer Digital</span>
+        </a>
+      </div>
+      <div class="home-header__menu-zone">
+        <nav class="home-nav" aria-label="Navegación principal">
+          <a href="home.html">Inicio</a>
+          <a href="home.html#comunidad">Comunidad</a>
+          <a href="archivo.html" aria-current="page">Archivo cultural</a>
+          <a href="historia.html">Historia</a>
+          <a href="atacaf.html">ATACAF</a>
+        </nav>
+      </div>
+      <div class="home-header__actions-zone">
+        <a href="login.html" class="home-nav__cta">Entrar</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="archivo-main-pro">
+    <section class="archivo-hero-pro archivo-anim-up">
+      <p class="home-chip">Archivo cultural comunitario</p>
+      <h1>Archivo Cultural Afrocrece</h1>
+      <p>Memoria viva, relatos, danzas, fotografías y saberes de la comunidad afrollanera de Veracruz.</p>
+      <div class="archivo-hero-pro__actions">
+        <a href="index.html" class="home-btn home-btn--primary">Explorar archivo cultural</a>
+        <a href="historia.html" class="home-btn home-btn--ghost">Conocer la historia</a>
+      </div>
+    </section>
+
+    <section class="archivo-values-pro archivo-anim-up" aria-label="Categorías culturales del archivo">
+      <article class="archivo-value-card">
+        <span class="archivo-value-card__icon" aria-hidden="true">📜</span>
+        <div>
+          <h2>Historias y memoria</h2>
+          <span class="archivo-value-card__line" aria-hidden="true"></span>
+          <p>Relatos comunitarios y memoria oral que preservan el legado afrodescendiente.</p>
+        </div>
+      </article>
+      <article class="archivo-value-card">
+        <span class="archivo-value-card__icon" aria-hidden="true">🥁</span>
+        <div>
+          <h2>Danza y tradición</h2>
+          <span class="archivo-value-card__line" aria-hidden="true"></span>
+          <p>Registros de expresiones artísticas y prácticas culturales transmitidas por generaciones.</p>
+        </div>
+      </article>
+      <article class="archivo-value-card">
+        <span class="archivo-value-card__icon" aria-hidden="true">🌿</span>
+        <div>
+          <h2>Comunidad y territorio</h2>
+          <span class="archivo-value-card__line" aria-hidden="true"></span>
+          <p>Procesos colectivos que fortalecen identidad, pertenencia y proyección territorial.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="archivo-split-pro archivo-anim-up" aria-label="Composición editorial del archivo cultural">
+      <article class="archivo-split-pro__mosaic">
+        <figure class="archivo-media archivo-media--hero"><img src="images/com.jpg" alt="Encuentro comunitario afrocrece" data-archivo-lightbox></figure>
+        <figure class="archivo-media archivo-media--mid"><img src="images/danzas.jpg" alt="Danza y expresión cultural" data-archivo-lightbox></figure>
+        <figure class="archivo-media archivo-media--mid"><img src="images/a12.jpg" alt="Juventud y memoria" data-archivo-lightbox></figure>
+        <figure class="archivo-media archivo-media--wide"><img src="images/9.jpg" alt="Tradición y territorio" data-archivo-lightbox></figure>
+      </article>
+      <article class="archivo-split-pro__content">
+        <h2>¿Qué encontrarás en el archivo?</h2>
+        <p>El Archivo Cultural Afrocrece reúne piezas visuales y narrativas creadas desde el territorio para preservar la memoria comunitaria.</p>
+        <ul class="archivo-feature-list">
+          <li>Fotografías comunitarias</li>
+          <li>Videos culturales</li>
+          <li>Relatos y memoria oral</li>
+          <li>Eventos y registros territoriales</li>
+        </ul>
+        <p class="archivo-feature-note">Contenido organizado para consulta cultural, investigación comunitaria y reconocimiento identitario.</p>
+      </article>
+    </section>
+
+    <section class="archivo-highlight archivo-anim-up" aria-label="Valor cultural del archivo">
+      <p>Este archivo conserva la memoria viva de la comunidad, permitiendo que nuevas generaciones reconozcan su historia, sus expresiones culturales y su identidad territorial.</p>
+    </section>
+
+    <section class="archivo-cta-final archivo-anim-up" aria-label="Entrada al archivo cultural">
+      <h3>Consulta los registros culturales</h3>
+      <p>Explora el archivo funcional y accede a fotografías, videos, relatos, eventos y memorias comunitarias.</p>
+      <a href="index.html" class="home-btn home-btn--primary">Entrar al archivo</a>
+    </section>
+  </main>
+  <div class="archivo-lightbox" id="archivoLightbox" aria-hidden="true">
+    <div class="archivo-lightbox__backdrop" data-close="archivo-lightbox"></div>
+    <article class="archivo-lightbox__dialog" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen cultural">
+      <button class="archivo-lightbox__close" type="button" data-close="archivo-lightbox" aria-label="Cerrar imagen">✕</button>
+      <img id="archivoLightboxImage" src="" alt="Imagen ampliada del archivo cultural">
+    </article>
+  </div>
+
+  <script src="js/archivo.js"></script>
+</body>
+</html>
