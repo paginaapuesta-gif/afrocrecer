@@ -16834,3 +16834,582 @@ body {
     padding: 28px 22px !important;
   }
 }
+
+/* =====================================================
+   LOGIN SIN SCROLL DESKTOP - SOLO LOGIN
+===================================================== */
+
+@media (min-width: 901px) {
+
+  body.login-body {
+    height: 100vh !important;
+    overflow: hidden !important;
+  }
+
+  body.login-body .login-container {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    overflow: hidden !important;
+    align-items: stretch !important;
+  }
+
+  body.login-body .login-panel {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+  }
+
+  body.login-body .brand-logo {
+    width: 78px !important;
+    height: 78px !important;
+  }
+
+  body.login-body .login-panel h2 {
+    font-size: 28px !important;
+    margin-top: 14px !important;
+    margin-bottom: 4px !important;
+  }
+
+  body.login-body .login-sub {
+    margin-bottom: 20px !important;
+  }
+
+  body.login-body .login-panel input {
+    padding: 13px !important;
+    margin-bottom: 12px !important;
+  }
+
+  body.login-body .btn-login {
+    padding: 13px !important;
+  }
+
+  body.login-body .login-link {
+    margin-top: 12px !important;
+  }
+
+  body.login-body .login-hero {
+    height: 100vh !important;
+  }
+}
+/* =====================================================
+   FIX FINAL: SCROLL GLOBAL PARA TODAS LAS PÁGINAS
+   excepto login.html
+===================================================== */
+
+html {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow-y: auto !important;
+}
+
+body:not(.login-body) {
+  height: auto !important;
+  min-height: 100vh !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+/* Mantener login sin scroll SOLO en escritorio */
+@media (min-width: 901px) {
+  body.login-body {
+    height: 100vh !important;
+    overflow: hidden !important;
+  }
+}
+
+/* =====================================================
+   HISTORIA V2 PREMIUM - MEMORIA CULTURAL
+===================================================== */
+
+body.info-page--historia-pro {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(242, 201, 76, .12), transparent 32%),
+    radial-gradient(circle at 90% 35%, rgba(80, 120, 180, .14), transparent 35%),
+    linear-gradient(180deg, #07111f 0%, #0b1320 45%, #05080d 100%) !important;
+  color: #f8f5ea !important;
+}
+
+body.info-page--historia-pro .info-main,
+body.info-page--historia-pro .historia-main-pro {
+  width: min(100% - 36px, 1320px) !important;
+  margin: 0 auto !important;
+  padding: 34px 0 80px !important;
+  background: transparent !important;
+}
+
+/* HERO */
+body.info-page--historia-pro .historia-hero-pro {
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.025)),
+    radial-gradient(circle at top left, rgba(242,201,76,.16), transparent 38%) !important;
+  border: 1px solid rgba(242,201,76,.24) !important;
+  border-radius: 26px !important;
+  padding: 34px !important;
+  box-shadow: 0 26px 70px rgba(0,0,0,.42) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+body.info-page--historia-pro .historia-hero-pro h1 {
+  color: #fff7df !important;
+  text-shadow: 0 10px 30px rgba(0,0,0,.45) !important;
+}
+
+body.info-page--historia-pro .historia-hero-pro p {
+  color: rgba(255,255,255,.82) !important;
+}
+
+body.info-page--historia-pro .historia-hero-pro img,
+body.info-page--historia-pro .historia-hero-pro picture img {
+  border-radius: 20px !important;
+  border: 1px solid rgba(255,255,255,.13) !important;
+  box-shadow: 0 18px 42px rgba(0,0,0,.45) !important;
+  filter: saturate(1.04) contrast(1.04) !important;
+}
+
+body.info-page--historia-pro .historia-kicker,
+body.info-page--historia-pro .info-kicker {
+  background: rgba(242,201,76,.12) !important;
+  border: 1px solid rgba(242,201,76,.36) !important;
+  color: #f7d36b !important;
+}
+
+/* STATS */
+body.info-page--historia-pro .historia-stats-pro {
+  background: rgba(255,255,255,.045) !important;
+  border: 1px solid rgba(242,201,76,.18) !important;
+  border-radius: 22px !important;
+  box-shadow: 0 18px 48px rgba(0,0,0,.35) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+body.info-page--historia-pro .historia-stats-pro strong {
+  color: #f2c94c !important;
+  text-shadow: 0 0 20px rgba(242,201,76,.2) !important;
+}
+
+body.info-page--historia-pro .historia-stats-pro span {
+  color: rgba(255,255,255,.78) !important;
+}
+
+/* BLOQUES DE CONTENIDO */
+body.info-page--historia-pro .historia-content-pro,
+body.info-page--historia-pro .historia-section-pro,
+body.info-page--historia-pro .info-card,
+body.info-page--historia-pro .info-panel {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.02)) !important;
+  border: 1px solid rgba(255,255,255,.10) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 22px 58px rgba(0,0,0,.38) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+body.info-page--historia-pro .historia-content-pro {
+  padding: 34px !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+body.info-page--historia-pro .historia-content-pro::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 28px;
+  bottom: 28px;
+  width: 4px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #f2c94c, transparent);
+}
+
+body.info-page--historia-pro .historia-content-pro h2,
+body.info-page--historia-pro .historia-section-pro h2 {
+  color: #ffe39a !important;
+  letter-spacing: -.5px !important;
+}
+
+body.info-page--historia-pro .historia-content-pro h3,
+body.info-page--historia-pro .historia-section-pro h3 {
+  color: #f2c94c !important;
+}
+
+body.info-page--historia-pro .historia-content-pro p,
+body.info-page--historia-pro .historia-section-pro p,
+body.info-page--historia-pro .historia-content-pro li {
+  color: rgba(255,255,255,.82) !important;
+  line-height: 1.75 !important;
+}
+
+/* FRASE FINAL */
+body.info-page--historia-pro blockquote,
+body.info-page--historia-pro .historia-quote {
+  background: linear-gradient(135deg, rgba(242,201,76,.16), rgba(255,255,255,.045)) !important;
+  border-left: 4px solid #f2c94c !important;
+  border-radius: 18px !important;
+  color: #fff1bd !important;
+  box-shadow: 0 14px 34px rgba(0,0,0,.28) !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  body.info-page--historia-pro .info-main,
+  body.info-page--historia-pro .historia-main-pro {
+    width: calc(100% - 22px) !important;
+    padding-top: 22px !important;
+  }
+
+  body.info-page--historia-pro .historia-hero-pro {
+    padding: 22px !important;
+    border-radius: 20px !important;
+  }
+
+  body.info-page--historia-pro .historia-content-pro {
+    padding: 26px 22px !important;
+  }
+
+  body.info-page--historia-pro .historia-hero-pro h1 {
+    font-size: clamp(34px, 9vw, 52px) !important;
+  }
+}
+/* =====================================================
+   HISTORIA - BLOQUE QUIÉNES SOMOS PREMIUM
+===================================================== */
+
+body.info-page--historia-pro .historia-content-pro {
+  max-width: 980px !important;
+  margin: 28px 0 0 !important;
+  padding: 42px 46px !important;
+  border-radius: 26px !important;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.075), rgba(255,255,255,.025)) !important;
+  border: 1px solid rgba(242,201,76,.18) !important;
+}
+
+body.info-page--historia-pro .historia-content-pro .info-kicker,
+body.info-page--historia-pro .historia-content-pro .historia-kicker {
+  display: inline-flex !important;
+  width: auto !important;
+  padding: 8px 16px !important;
+  border-radius: 999px !important;
+  background: rgba(242,201,76,.14) !important;
+  color: #f2c94c !important;
+  font-size: 13px !important;
+  letter-spacing: 1px !important;
+}
+
+body.info-page--historia-pro .historia-content-pro h2 {
+  max-width: 850px !important;
+  margin-top: 18px !important;
+  font-size: clamp(34px, 4vw, 54px) !important;
+  line-height: 1.05 !important;
+}
+
+body.info-page--historia-pro .historia-content-pro p {
+  max-width: 900px !important;
+  font-size: 18px !important;
+}
+
+body.info-page--historia-pro .historia-content-pro ul {
+  margin-top: 20px !important;
+  padding-left: 0 !important;
+  list-style: none !important;
+}
+
+body.info-page--historia-pro .historia-content-pro li {
+  position: relative !important;
+  padding-left: 30px !important;
+  margin-bottom: 12px !important;
+}
+
+body.info-page--historia-pro .historia-content-pro li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #f2c94c;
+}
+
+body.info-page--historia-pro .historia-content-pro blockquote {
+  margin-top: 28px !important;
+  padding: 24px 28px !important;
+  font-size: 20px !important;
+}
+
+/* =====================================================
+   FIX REAL HISTORIA SECTION
+===================================================== */
+
+body.info-page--historia-pro section,
+body.info-page--historia-pro .historia-section,
+body.info-page--historia-pro .historia-content,
+body.info-page--historia-pro .historia-content-pro {
+  background:
+    linear-gradient(145deg,
+      rgba(255,255,255,.06),
+      rgba(255,255,255,.02)) !important;
+
+  border: 1px solid rgba(242,201,76,.18) !important;
+
+  border-radius: 28px !important;
+
+  padding: 42px !important;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.04) !important;
+
+  backdrop-filter: blur(10px) !important;
+}
+
+/* TITULO */
+body.info-page--historia-pro h2 {
+  font-size: clamp(40px, 4vw, 64px) !important;
+  line-height: 1.05 !important;
+  color: #fff1c4 !important;
+  margin-bottom: 24px !important;
+}
+
+/* SUBTITULOS */
+body.info-page--historia-pro h3 {
+  color: #f2c94c !important;
+  margin-top: 28px !important;
+  margin-bottom: 10px !important;
+}
+
+/* TEXTO */
+body.info-page--historia-pro p,
+body.info-page--historia-pro li {
+  font-size: 18px !important;
+  line-height: 1.8 !important;
+  color: rgba(255,255,255,.84) !important;
+}
+
+/* LISTA */
+body.info-page--historia-pro ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+body.info-page--historia-pro li {
+  position: relative !important;
+  padding-left: 28px !important;
+  margin-bottom: 12px !important;
+}
+
+body.info-page--historia-pro li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #f2c94c;
+}
+
+/* FRASE FINAL */
+body.info-page--historia-pro blockquote {
+  margin-top: 34px !important;
+  padding: 24px 28px !important;
+
+  border-left: 4px solid #f2c94c !important;
+
+  border-radius: 18px !important;
+
+  background:
+    linear-gradient(135deg,
+      rgba(242,201,76,.18),
+      rgba(255,255,255,.04)) !important;
+
+  color: #fff2c7 !important;
+
+  font-size: 22px !important;
+  font-style: italic !important;
+}
+/* =====================================================
+   HISTORIA SECTION PREMIUM FINAL
+===================================================== */
+
+body.info-page--historia-pro section,
+body.info-page--historia-pro .historia-section,
+body.info-page--historia-pro .historia-content,
+body.info-page--historia-pro .historia-content-pro {
+
+  max-width: 980px !important;
+
+  margin: 42px auto !important;
+
+  padding: 38px 42px !important;
+
+  border-radius: 28px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.055),
+      rgba(255,255,255,.02)
+    ) !important;
+
+  border: 1px solid rgba(242,201,76,.16) !important;
+
+  box-shadow:
+    0 18px 60px rgba(0,0,0,.42),
+    inset 0 1px 0 rgba(255,255,255,.03) !important;
+
+  backdrop-filter: blur(10px) !important;
+}
+
+/* ETIQUETA */
+body.info-page--historia-pro .info-kicker,
+body.info-page--historia-pro .historia-kicker {
+
+  display: inline-flex !important;
+
+  align-items: center !important;
+
+  width: auto !important;
+
+  padding: 8px 16px !important;
+
+  border-radius: 999px !important;
+
+  background: rgba(242,201,76,.12) !important;
+
+  border: 1px solid rgba(242,201,76,.25) !important;
+
+  color: #f2c94c !important;
+
+  font-size: 13px !important;
+
+  letter-spacing: 1px !important;
+
+  margin-bottom: 18px !important;
+}
+
+/* TITULO */
+body.info-page--historia-pro h2 {
+
+  font-size: clamp(32px, 3vw, 52px) !important;
+
+  line-height: 1.05 !important;
+
+  color: #fff1c4 !important;
+
+  margin-bottom: 26px !important;
+
+  max-width: 850px !important;
+
+  letter-spacing: -.5px !important;
+}
+
+/* SUBTITULOS */
+body.info-page--historia-pro h3 {
+
+  color: #f2c94c !important;
+
+  margin-top: 28px !important;
+
+  margin-bottom: 10px !important;
+
+  font-size: 24px !important;
+}
+
+/* TEXTO */
+body.info-page--historia-pro p,
+body.info-page--historia-pro li {
+
+  font-size: 18px !important;
+
+  line-height: 1.8 !important;
+
+  color: rgba(255,255,255,.84) !important;
+}
+
+/* LISTA */
+body.info-page--historia-pro ul {
+
+  list-style: none !important;
+
+  padding-left: 0 !important;
+
+  margin-top: 18px !important;
+}
+
+body.info-page--historia-pro li {
+
+  position: relative !important;
+
+  padding-left: 28px !important;
+
+  margin-bottom: 12px !important;
+}
+
+body.info-page--historia-pro li::before {
+
+  content: "✦";
+
+  position: absolute;
+
+  left: 0;
+
+  color: #f2c94c;
+}
+
+/* FRASE FINAL */
+body.info-page--historia-pro blockquote {
+
+  margin-top: 34px !important;
+
+  padding: 24px 28px !important;
+
+  border-left: 4px solid #f2c94c !important;
+
+  border-radius: 18px !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(242,201,76,.16),
+      rgba(255,255,255,.03)
+    ) !important;
+
+  color: #fff2c7 !important;
+
+  font-size: 21px !important;
+
+  font-style: italic !important;
+
+  box-shadow:
+    0 14px 40px rgba(0,0,0,.28) !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+  body.info-page--historia-pro section,
+  body.info-page--historia-pro .historia-section,
+  body.info-page--historia-pro .historia-content,
+  body.info-page--historia-pro .historia-content-pro {
+
+    width: calc(100% - 20px) !important;
+
+    margin: 24px auto !important;
+
+    padding: 26px 22px !important;
+  }
+
+  body.info-page--historia-pro h2 {
+
+    font-size: clamp(28px, 9vw, 44px) !important;
+  }
+
+  body.info-page--historia-pro p,
+  body.info-page--historia-pro li {
+
+    font-size: 16px !important;
+  }
+
+  body.info-page--historia-pro blockquote {
+
+    font-size: 18px !important;
+
+    padding: 20px !important;
+  }
+}
