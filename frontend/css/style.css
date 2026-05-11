@@ -1718,35 +1718,11 @@ z-index:9999;
 
 }
 
-.modal-post-contenido{
-
-width:80%;
-
-max-width:1100px;
-
-background:#111;
-
-border-radius:10px;
-
-overflow:hidden;
-
-}
-
 .modal-post-grid{
 
 display:grid;
 
 grid-template-columns:1fr 400px;
-
-}
-
-.modal-post-img img{
-
-width:100%;
-
-height:100%;
-
-object-fit:cover;
 
 }
 
@@ -2568,31 +2544,6 @@ z-index:9999;
 
 }
 
-.modal-login-card{
-
-background:#111;
-
-padding:30px;
-
-border-radius:14px;
-
-text-align:center;
-
-width:330px;
-
-box-shadow:0 20px 60px rgba(0,0,0,0.8);
-
-}
-
-.modal-login-botones{
-
-display:flex;
-flex-direction:column;
-gap:10px;
-margin-top:20px;
-
-}
-
 /* =========================
    MODAL LOGIN
 ========================= */
@@ -2618,38 +2569,8 @@ animation:fadeModal .2s ease;
 
 }
 
-.modal-login-card{
-
-background:#111;
-
-padding:30px;
-
-border-radius:14px;
-
-text-align:center;
-
-width:330px;
-
-box-shadow:0 20px 60px rgba(0,0,0,0.8);
-
-}
-
 .modal-login-card h2{
 margin-bottom:10px;
-}
-
-.modal-login-card p{
-color:#aaa;
-font-size:14px;
-}
-
-.modal-login-botones{
-
-display:flex;
-flex-direction:column;
-gap:10px;
-margin-top:20px;
-
 }
 
 .btn-login{
@@ -2663,22 +2584,6 @@ padding:12px;
 border-radius:8px;
 
 font-weight:bold;
-
-cursor:pointer;
-
-}
-
-.btn-cancelar{
-
-background:#444;
-
-border:none;
-
-padding:10px;
-
-border-radius:8px;
-
-color:white;
 
 cursor:pointer;
 
@@ -3136,37 +3041,6 @@ box-shadow:0 0 0 3px rgba(242,201,76,0.2);
 background:white;
 
 }
-.login-panel input{
-
-width:100%;
-
-padding:14px;
-
-margin-bottom:18px;
-
-border-radius:10px;
-
-border:1px solid #ddd;
-
-font-size:14px;
-
-transition:0.2s;
-
-background:#fafafa;
-
-}
-
-.login-panel input:focus{
-
-outline:none;
-
-border-color:#f2c94c;
-
-box-shadow:0 0 0 3px rgba(242,201,76,0.2);
-
-background:white;
-
-}
 .hero-overlay{
 
 background:rgba(0,0,0,0.45);
@@ -3377,22 +3251,6 @@ background:white;
 padding:6px;
 
 box-shadow:0 10px 30px rgba(0,0,0,0.2);
-
-}
-.login-panel{
-
-width:420px;
-
-background:white;
-
-padding:60px 50px;
-
-display:flex;
-flex-direction:column;
-
-justify-content:center;
-
-box-shadow:20px 0 60px rgba(0,0,0,0.08);
 
 }
 .login-panel{
@@ -3717,29 +3575,6 @@ transition:0.25s;
 transform:translateY(-2px);
 
 box-shadow:0 8px 20px rgba(0,0,0,0.25);
-
-}
-
-.hero-overlay{
-
-position:absolute;
-
-top:50%;
-left:50%;
-
-transform:translate(-50%, -50%);
-
-background:rgba(0,0,0,0.55);
-
-padding:40px;
-
-border-radius:16px;
-
-max-width:520px;
-
-text-align:center;
-
-backdrop-filter:blur(8px);
 
 }
 .login-hero .hero-overlay{
@@ -4593,9 +4428,6 @@ background:rgba(242,201,76,0.2);
 }
 
 @media (max-width: 1300px){
-.home-page .main-layout{
-grid-template-columns:1fr;
-}
 }
 
 /* PULIDO FINAL RESPONSIVE (espacios + legibilidad sidebar) */
@@ -8112,10 +7944,6 @@ TOPBAR PROFESIONAL (NUEVO)
   padding: 20px 10px;
 }
 
-.video-track::-webkit-scrollbar {
-  display: none;
-}
-
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -10141,10 +9969,6 @@ body.cms-edit-mode .cms-editable[contenteditable="true"] {
   cursor:pointer;
 }
 
-body.modal-open{
-  overflow:hidden;
-}
-
 .home-ally-card{
   display:flex;
   flex-direction:column;
@@ -10351,10 +10175,6 @@ body.modal-open{
 }
 
 @media (max-width: 768px){
-  .login-page-pro .login-container{
-    grid-template-columns:1fr;
-    min-height:auto;
-  }
 
   .login-page-pro .login-hero{
     display:none;
@@ -10625,10 +10445,6 @@ body.modal-open{
   }
   .home-cinematic .home-hero__actions{justify-content:center;width:100%;}
   .home-cinematic .home-hero__actions .home-btn{width:min(100%,320px);}
-
-  .home-section{
-    padding:42px 14px;
-  }
 
   .home-media-carousel .home-banner{
     min-height:280px;
@@ -14565,14 +14381,6 @@ body.modal-open main > section{
 .home-page .feed-tools-row {
   grid-template-columns: minmax(0, 1fr) 210px !important;
 }
-
-.home-page .sidebar:first-of-type {
-  width: 270px !important;
-}
-
-.home-page .sidebar:last-of-type {
-  width: 300px !important;
-}
 /* =========================================
    AJUSTE FINAL HEADER ARCHIVO
    ========================================= */
@@ -16212,11 +16020,6 @@ body {
     grid-column: 2 !important;
     max-width: 100% !important;
   }
-
-  .home-page .sidebar:last-of-type {
-    grid-column: 1 / -1 !important;
-    width: 100% !important;
-  }
 }
 
 /* Tablet y ventana minimizada: todo en una columna */
@@ -16300,13 +16103,6 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-html,
-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 /* HEADER HOME */
