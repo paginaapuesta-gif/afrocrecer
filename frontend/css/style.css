@@ -17994,3 +17994,1021 @@ body.login-page-pro .login-link {
     display: none !important;
   }
 }
+
+/* =====================================
+   FIX REAL TARJETAS MOBILE
+===================================== */
+
+@media (max-width: 768px) {
+
+  .home-impact__grid,
+  .home-allies__grid,
+  .home-network__grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+  }
+
+  .home-impact__card,
+  .home-ally-card,
+  .home-network__card {
+
+    min-height: unset !important;
+    height: auto !important;
+
+    padding: 22px !important;
+
+    border-radius: 24px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+
+    gap: 12px !important;
+  }
+
+  .home-impact__card h3,
+  .home-ally-card h3,
+  .home-network__card h3 {
+
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+  }
+
+  .home-impact__card p,
+  .home-ally-card p,
+  .home-network__card p {
+
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+  }
+
+  .home-impact__icon,
+  .home-ally-card img,
+  .home-network__logo {
+
+    width: 58px !important;
+    height: 58px !important;
+    margin-bottom: 6px !important;
+  }
+
+}
+/* =========================================
+   HOME MOBILE FINAL 355px - 416px
+========================================= */
+
+@media (max-width: 480px) {
+
+  html,
+  body.home-portal {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  body.home-portal {
+    background: #05080c !important;
+  }
+
+  .home-main-v3 {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  /* HEADER */
+  .home-header {
+    height: auto !important;
+  }
+
+  .home-header__inner {
+    padding: 12px 14px !important;
+    gap: 10px !important;
+  }
+
+  .home-brand__logo {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .home-brand span {
+    font-size: 18px !important;
+    line-height: 1.1 !important;
+  }
+
+  .home-nav__cta {
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+  }
+
+  .home-menu-btn {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  /* HERO */
+  .home-cinematic {
+    min-height: auto !important;
+    height: auto !important;
+    padding: 95px 16px 48px !important;
+  }
+
+  .home-cinematic__content {
+    padding: 0 !important;
+    text-align: center !important;
+  }
+
+  .home-chip {
+    max-width: 100% !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    padding: 12px 16px !important;
+    margin-bottom: 22px !important;
+  }
+
+  .home-cinematic__content h1 {
+    font-size: 50px !important;
+    line-height: .9 !important;
+    margin: 0 0 16px !important;
+  }
+
+  .home-cinematic__content h1 span {
+    font-size: 48px !important;
+  }
+
+  .home-cinematic__content > p {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+    margin: 0 auto 24px !important;
+    max-width: 320px !important;
+  }
+
+  .home-hero__actions {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    width: 100% !important;
+  }
+
+  .home-btn {
+    width: 100% !important;
+    min-height: 54px !important;
+    padding: 14px 18px !important;
+    font-size: 15px !important;
+    border-radius: 999px !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  /* SECCIONES */
+  .home-section {
+    padding: 42px 16px !important;
+  }
+
+  .home-section__head {
+    margin-bottom: 24px !important;
+  }
+
+  .home-section__head h2 {
+    font-size: 30px !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
+    margin-bottom: 10px !important;
+  }
+
+  .home-section__head p {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    max-width: 320px !important;
+  }
+
+  /* IMPACTO */
+  .home-impact__grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+  }
+
+  .home-impact__card {
+    width: 100% !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding: 24px 22px !important;
+    border-radius: 24px !important;
+    gap: 12px !important;
+  }
+
+  .home-impact__icon {
+    width: 58px !important;
+    height: 58px !important;
+    font-size: 24px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .home-impact__card h3 {
+    font-size: 24px !important;
+    line-height: 1.15 !important;
+    margin: 0 !important;
+  }
+
+  .home-impact__card p {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+    margin: 0 !important;
+  }
+
+  /* GALERÍA */
+  .home-mosaic,
+  .home-mosaic--compact {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .home-mosaic__item {
+    height: 230px !important;
+    min-height: 230px !important;
+    border-radius: 22px !important;
+  }
+
+  /* CARRUSEL */
+  .home-banner {
+    height: 360px !important;
+    border-radius: 24px !important;
+  }
+
+  .home-banner__item img {
+    height: 360px !important;
+    object-fit: cover !important;
+  }
+
+  .home-banner__caption {
+    left: 16px !important;
+    right: 16px !important;
+    bottom: 18px !important;
+    padding: 16px !important;
+  }
+
+  .home-banner__caption h3 {
+    font-size: 22px !important;
+  }
+
+  .home-banner__caption p {
+    font-size: 14px !important;
+  }
+
+  /* EVENTOS */
+  .home-events-strip__grid,
+  .home-events-strip__grid--compact {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .home-events-strip__grid article {
+    padding: 18px !important;
+    border-radius: 18px !important;
+  }
+
+  /* MAPA */
+  .home-map-layout,
+  .home-map-layout--balanced {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+  }
+
+  .home-map-wrap iframe {
+    height: 260px !important;
+    min-height: 260px !important;
+    border-radius: 22px !important;
+  }
+
+  .home-map-info {
+    padding: 22px !important;
+    border-radius: 22px !important;
+  }
+
+  /* TESTIMONIOS */
+  .home-testimonials__grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+  }
+
+  .testimonial-card {
+    padding: 22px !important;
+    border-radius: 22px !important;
+  }
+
+  /* ALIADOS */
+  .home-allies__grid,
+  .home-allies__grid--links {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+  }
+
+  .home-ally-card {
+    width: 100% !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding: 24px 22px !important;
+    border-radius: 24px !important;
+  }
+
+  .home-ally-card__visual {
+    min-height: 110px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .home-ally-card__visual img {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  .home-ally-card__title {
+    font-size: 22px !important;
+    line-height: 1.2 !important;
+  }
+
+  .home-ally-card small {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* CTA FINAL */
+  .home-final-cta {
+    padding: 42px 16px !important;
+  }
+
+  .home-final-cta__card {
+    padding: 32px 22px !important;
+    border-radius: 26px !important;
+  }
+
+  .home-final-cta__card h2 {
+    font-size: 30px !important;
+    line-height: 1.12 !important;
+  }
+
+  .home-final-cta__card p {
+    font-size: 16px !important;
+    line-height: 1.55 !important;
+  }
+
+  /* FOOTER */
+  .home-footer {
+    padding: 28px 18px !important;
+  }
+
+  .home-footer__bottom,
+  .home-footer__bottom--split,
+  .home-footer__bottom--compact {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    text-align: left !important;
+  }
+
+  .home-footer p,
+  .home-footer a {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    word-break: break-word !important;
+  }
+}
+/* =========================================
+   HOME MOBILE HERO COMPACTO
+========================================= */
+
+@media (max-width: 480px) {
+
+  .home-cinematic {
+    min-height: auto !important;
+    padding: 78px 16px 34px !important;
+  }
+
+  .home-cinematic__content h1 {
+    font-size: 44px !important;
+    line-height: .92 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .home-cinematic__content h1 span {
+    font-size: 42px !important;
+  }
+
+  .home-cinematic__content > p {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .home-hero__actions {
+    gap: 12px !important;
+  }
+
+  .home-btn {
+    min-height: 50px !important;
+    padding: 12px 16px !important;
+  }
+
+  .home-impact {
+    padding-top: 38px !important;
+  }
+
+  .home-section__head h2 {
+    font-size: 28px !important;
+  }
+}
+/* =========================================
+   FIX ANCLA COMUNIDAD MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  #comunidad {
+    scroll-margin-top: 90px !important;
+  }
+
+  .home-impact {
+    padding-top: 46px !important;
+  }
+
+  .home-cinematic {
+    padding-bottom: 46px !important;
+  }
+
+  .home-impact__card {
+    padding: 22px !important;
+  }
+
+  .home-impact__icon {
+    width: 52px !important;
+    height: 52px !important;
+  }
+
+  .home-impact__card h3 {
+    font-size: 22px !important;
+  }
+
+  .home-impact__card p {
+    font-size: 14px !important;
+  }
+}
+/* =========================================
+   GALERIA MOBILE PREMIUM
+========================================= */
+
+@media (max-width: 480px) {
+
+  .home-gallery {
+    padding: 50px 16px !important;
+  }
+
+  .home-gallery__wrapper,
+  .gallery-section,
+  .galeria-container {
+    gap: 18px !important;
+  }
+
+  .home-gallery h2,
+  .gallery-title {
+    font-size: 40px !important;
+    line-height: 1.05 !important;
+    margin-bottom: 12px !important;
+    text-align: center !important;
+  }
+
+  .home-gallery p,
+  .gallery-description {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    margin-bottom: 24px !important;
+  }
+
+  .gallery-card,
+  .home-gallery__card {
+    border-radius: 26px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    min-height: auto !important;
+  }
+
+  .gallery-card img,
+  .home-gallery__card img {
+    width: 100% !important;
+    height: 230px !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  .gallery-card span,
+  .gallery-tag {
+    font-size: 14px !important;
+    padding: 10px 16px !important;
+    border-radius: 999px !important;
+    bottom: 14px !important;
+    left: 14px !important;
+  }
+}
+/* =========================================
+   AGENDA MOBILE PREMIUM
+========================================= */
+
+@media (max-width: 480px) {
+
+  .home-events-strip {
+    padding: 44px 16px !important;
+    background: #05080c !important;
+  }
+
+  .home-events-strip .home-section__head {
+    margin-bottom: 22px !important;
+  }
+
+  .home-events-strip .home-section__head h2 {
+    font-size: 30px !important;
+    line-height: 1.08 !important;
+    max-width: 300px !important;
+    margin: 0 auto 10px !important;
+  }
+
+  .home-events-strip .home-section__head p {
+    font-size: 15px !important;
+    line-height: 1.45 !important;
+    max-width: 310px !important;
+  }
+
+  .home-events-strip__grid,
+  .home-events-strip__grid--compact {
+    gap: 12px !important;
+  }
+
+  .home-events-strip__grid article {
+    padding: 18px 20px !important;
+    border-radius: 20px !important;
+    min-height: auto !important;
+    background: linear-gradient(180deg, #121927, #0d131d) !important;
+    border: 1px solid rgba(242, 201, 76, 0.24) !important;
+  }
+
+  .home-events-strip__grid article strong {
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+    color: #ffd85a !important;
+  }
+
+  .home-events-strip__grid article span {
+    font-size: 15px !important;
+    line-height: 1.45 !important;
+    color: #e6e6e6 !important;
+  }
+}
+/* =========================================
+   AJUSTE FINAL AGENDA MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .home-events-strip {
+    padding-top: 34px !important;
+    padding-bottom: 34px !important;
+  }
+
+  .home-events-strip .home-section__head {
+    margin-bottom: 16px !important;
+  }
+
+  .home-events-strip__grid article {
+    padding: 16px 18px !important;
+    min-height: 92px !important;
+  }
+
+  .home-events-strip__grid article strong {
+    font-size: 18px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .home-events-strip__grid article span {
+    font-size: 14px !important;
+    line-height: 1.35 !important;
+  }
+}
+/* =========================================
+   HOME MOBILE PULIDO MAPA TESTIMONIOS ALIADOS
+========================================= */
+
+@media (max-width: 480px) {
+
+  /* MAPA */
+  .home-map-layout,
+  .home-map-layout--balanced {
+    padding: 34px 16px !important;
+    gap: 16px !important;
+  }
+
+  .home-map-wrap {
+    border-radius: 22px !important;
+    overflow: hidden !important;
+  }
+
+  .home-map-wrap iframe {
+    height: 230px !important;
+    min-height: 230px !important;
+  }
+
+  .home-map-info,
+  .home-map-info--rich {
+    padding: 20px !important;
+    border-radius: 22px !important;
+  }
+
+  .home-map-info h3 {
+    font-size: 21px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .home-map-info p {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* TESTIMONIOS */
+  .home-testimonials {
+    padding: 38px 16px !important;
+  }
+
+  .home-testimonials .home-section__head h2 {
+    font-size: 30px !important;
+    line-height: 1.08 !important;
+    max-width: 280px !important;
+  }
+
+  .home-testimonials__grid {
+    gap: 16px !important;
+  }
+
+  .testimonial-card {
+    padding: 18px !important;
+    border-radius: 22px !important;
+  }
+
+  .testimonial-card img {
+    height: 170px !important;
+    border-radius: 16px !important;
+    object-fit: cover !important;
+  }
+
+  .testimonial-card p {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+  }
+
+  .testimonial-card strong {
+    font-size: 14px !important;
+  }
+
+  /* ALIADOS */
+  .home-allies {
+    padding: 38px 16px !important;
+  }
+
+  .home-allies .home-section__head {
+    margin-bottom: 18px !important;
+  }
+
+  .home-allies .home-section__head h2 {
+    font-size: 28px !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
+  }
+
+  .home-allies .home-section__head p {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+    max-width: 300px !important;
+  }
+
+  .home-allies__grid,
+  .home-allies__grid--links {
+    gap: 16px !important;
+  }
+
+  .home-ally-card {
+    padding: 20px !important;
+    border-radius: 22px !important;
+    min-height: auto !important;
+  }
+
+  .home-ally-card__visual {
+    min-height: 92px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .home-ally-card__badge {
+    font-size: 11px !important;
+    padding: 5px 10px !important;
+  }
+
+  .home-ally-card__visual img {
+    width: 58px !important;
+    height: 58px !important;
+  }
+
+  .home-ally-card__title {
+    font-size: 20px !important;
+    line-height: 1.15 !important;
+  }
+
+  .home-ally-card small {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+  }
+
+  .home-ally-card em {
+    font-size: 14px !important;
+  }
+}
+/* =========================================
+   ALIADOS MOBILE COMPACTO FINAL
+========================================= */
+
+@media (max-width: 480px) {
+
+  .home-allies {
+    padding: 34px 16px !important;
+  }
+
+  .home-allies__grid,
+  .home-allies__grid--links {
+    gap: 14px !important;
+  }
+
+  .home-ally-card {
+    min-height: auto !important;
+    height: auto !important;
+    padding: 18px !important;
+    border-radius: 22px !important;
+  }
+
+  .home-ally-card__visual {
+    min-height: 72px !important;
+    height: 72px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .home-ally-card__badge {
+    font-size: 10px !important;
+    padding: 4px 9px !important;
+  }
+
+  .home-ally-card__visual img {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .home-ally-card__title {
+    font-size: 19px !important;
+    line-height: 1.15 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .home-ally-card small {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .home-ally-card em {
+    font-size: 13px !important;
+  }
+}
+/* =========================================
+   CTA FINAL MOBILE PREMIUM
+========================================= */
+
+@media (max-width: 480px) {
+
+  .home-final-cta {
+    padding: 40px 16px 30px !important;
+  }
+
+  .home-final-cta__box,
+  .home-final-card {
+    padding: 30px 22px !important;
+    border-radius: 28px !important;
+  }
+
+  .home-final-cta h2,
+  .home-final-card h2 {
+    font-size: 44px !important;
+    line-height: 1.05 !important;
+    letter-spacing: -1px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .home-final-cta p,
+  .home-final-card p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 24px !important;
+  }
+
+  .home-final-actions {
+    gap: 14px !important;
+  }
+
+  .home-final-actions .btn,
+  .home-final-actions a {
+    min-height: 58px !important;
+    font-size: 18px !important;
+    border-radius: 18px !important;
+  }
+
+  /* FOOTER */
+
+  .home-footer {
+    padding: 24px 16px !important;
+  }
+
+  .home-footer p,
+  .home-footer a,
+  .home-footer span {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+  }
+}
+/* =========================================
+   PAGINAS ALIADOS MOBILE PREMIUM
+========================================= */
+
+@media (max-width: 480px) {
+
+  body.ally-page,
+  body.ally-profile-page {
+    overflow-x: hidden !important;
+    background: #05080c !important;
+  }
+
+  .ally-page main,
+  .ally-page-full main,
+  .ally-profile-page main {
+    width: 100% !important;
+    padding: 28px 16px !important;
+  }
+
+  .ally-hero,
+  .ally-profile-hero,
+  .ally-full-hero {
+    padding: 18px !important;
+    border-radius: 24px !important;
+  }
+
+  .ally-hero img,
+  .ally-profile-hero img,
+  .ally-full-hero img {
+    height: 260px !important;
+    object-fit: cover !important;
+    border-radius: 20px !important;
+  }
+
+  .ally-card,
+  .ally-info-card,
+  .ally-content-card,
+  .ally-profile-card {
+    padding: 22px 20px !important;
+    border-radius: 22px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .ally-card h2,
+  .ally-info-card h2,
+  .ally-content-card h2,
+  .ally-profile-card h2 {
+    font-size: 24px !important;
+    line-height: 1.15 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .ally-card h3,
+  .ally-info-card h3,
+  .ally-content-card h3,
+  .ally-profile-card h3 {
+    font-size: 22px !important;
+    line-height: 1.15 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .ally-card p,
+  .ally-info-card p,
+  .ally-content-card p,
+  .ally-profile-card p {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .ally-gallery,
+  .ally-gallery-grid,
+  .ally-profile-gallery {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+
+  .ally-gallery img,
+  .ally-gallery-grid img,
+  .ally-profile-gallery img {
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+    border-radius: 18px !important;
+  }
+
+  .ally-actions,
+  .ally-profile-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .ally-actions a,
+  .ally-profile-actions a,
+  .ally-btn,
+  .ally-profile-btn {
+    width: 100% !important;
+    min-height: 52px !important;
+    border-radius: 999px !important;
+    font-size: 15px !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}
+/* =========================================
+   FOOTER HOME MOBILE PREMIUM DEFINITIVO
+========================================= */
+
+@media (max-width: 480px) {
+
+  body.home-portal .home-footer {
+    background: #05080c !important;
+    padding: 18px 18px 26px !important;
+    border-top: 1px solid rgba(255,255,255,0.08) !important;
+  }
+
+  body.home-portal .home-footer__bottom {
+    max-width: 310px !important;
+    margin: 0 auto !important;
+    padding: 18px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+
+    background: rgba(255,255,255,0.03) !important;
+    border: 1px solid rgba(242,201,76,0.18) !important;
+    border-radius: 18px !important;
+
+    text-align: center !important;
+  }
+
+  body.home-portal .home-footer__contacto,
+  body.home-portal .home-footer__legal {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 12px !important;
+    line-height: 1.45 !important;
+    color: #dbe7ff !important;
+
+    text-align: center !important;
+    word-break: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  body.home-portal .home-footer__legal a {
+    font-size: 12px !important;
+    color: #f2c94c !important;
+    text-decoration: none !important;
+  }
+}
+/* WhatsApp footer link */
+
+.home-footer a {
+  color: #f2c94c !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  transition: 0.3s ease;
+}
+
+.home-footer a:hover {
+  color: #ffffff !important;
+}
