@@ -1,66 +1,83 @@
 const multer = require("multer");
-const path = require("path");
-const fs = require("fs");
+const { CloudinaryStorage } = require("multer-storage-cloudinary");
+const cloudinary = require("cloudinary").v2;
 
-const UPLOAD_DIR = path.join(__dirname, "..", "uploads");
+/* CONFIGURACIÓN CLOUDINARY */
 
-if (!fs.existsSync(UPLOAD_DIR)) {
-  fs.mkdirSync(UPLOAD_DIR, { recursive: true });
-}
-
-/* CONFIGURAR ALMACENAMIENTO */
-
-const storage = multer.diskStorage({
-
-destination: function (req, file, cb) {
-
-cb(null, UPLOAD_DIR);
-
-},
-
-filename: function (req, file, cb) {
-
-const uniqueName = Date.now() + path.extname(file.originalname);
-
-cb(null, uniqueName);
-
-}
-
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-/* FILTRO IMÁGENES Y VIDEO */
+/* ALMACENAMIENTO EN CLOUDINARY */
+
+const storage = new CloudinaryStorage({
+  cloudinary: cloudinary,
+  params: async (req, file) => {
+    let resourceType = "auto";
+    let folder = "afrocrecer";
+
+    if (file.mimetype.startsWith("image/")) {
+      folder = "afrocrecer/imagenes";
+    } else if (file.mimetype.startsWith("video/")) {
+      folder = "afrocrecer/videos";
+    } else {
+      folder = "afrocrecer/documentos";
+    }
+
+    return {
+      folder: folder,
+      resource_type: resourceType,
+      allowed_formats: [
+        "jpg",
+        "jpeg",
+        "png",
+        "webp",
+        "gif",
+        "mp4",
+        "mov",
+        "avi",
+        "pdf",
+        "doc",
+        "docx",
+        "xls",
+        "xlsx",
+      ],
+    };
+  },
+});
+
+/* FILTRO IMÁGENES, VIDEO Y DOCUMENTOS */
 
 const fileFilter = (req, file, cb) => {
-
   console.log("MIMETYPE:", file.mimetype);
-  console.log("EXT:", path.extname(file.originalname));
 
- if (
-  file.mimetype.startsWith("image/") ||
-  file.mimetype.startsWith("video/") ||
-  file.mimetype === "application/pdf" ||
-  file.mimetype === "application/msword" ||
-  file.mimetype === "application/vnd.openxmlformats-officedocument.wordprocessingml.document" ||
-  file.mimetype === "application/vnd.ms-excel" ||
-  file.mimetype === "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-) {
-  cb(null, true);
-} else {
-  cb(new Error("Solo se permiten imágenes, videos o documentos"));
-}
+  if (
+    file.mimetype.startsWith("image/") ||
+    file.mimetype.startsWith("video/") ||
+    file.mimetype === "application/pdf" ||
+    file.mimetype === "application/msword" ||
+    file.mimetype ===
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document" ||
+    file.mimetype === "application/vnd.ms-excel" ||
+    file.mimetype ===
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+  ) {
+    cb(null, true);
+  } else {
+    cb(new Error("Solo se permiten imágenes, videos o documentos"));
+  }
 };
+
 /* CONFIGURACIÓN MULTER */
 
 const upload = multer({
-
-storage: storage,
-
-fileFilter: fileFilter,
-
-limits: {
-  fileSize: 50 * 1024 * 1024
-}
-
+  storage: storage,
+  fileFilter: fileFilter,
+  limits: {
+    fileSize: 50 * 1024 * 1024,
+  },
 });
 
 module.exports = upload;
